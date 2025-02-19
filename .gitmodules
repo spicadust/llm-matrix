@@ -1,0 +1,3 @@
+[submodule "megaDNA"]
+	path = megaDNA
+	url = git@github.com:lingxusb/megaDNA.git
