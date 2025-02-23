@@ -1,4 +1,3 @@
-*.pt
-*.fna
-*.fa
 results/*
+dataset/*
+checkpoints/*
