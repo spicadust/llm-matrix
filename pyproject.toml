@@ -5,10 +5,10 @@ build-backend = "hatchling.build"
 [project]
 name = "matrix"
 version = "0.1.0"
-requires-python = ">=3.12, <3.13"
+requires-python = ">=3.11, <3.12"
 dependencies = [
-    "torch",
     "megadna",
+    "evo2",
     "notebook",
     "python-dotenv",
     "bio>=1.7.1",
@@ -29,5 +29,5 @@ dev = ["ruff"]
 packages = ["src/matrix", "megaDNA"]
 
 [tool.uv.sources]
-torch = { url = "https://download.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp312-cp312-linux_x86_64.whl" }
 megadna = { path = "megaDNA" }
+evo2 = { path = "evo2" }

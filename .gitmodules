@@ -1,3 +1,6 @@
 [submodule "megaDNA"]
 	path = megaDNA
 	url = git@github.com:lingxusb/megaDNA.git
+[submodule "evo2"]
+	path = evo2
+	url = git@github.com:ArcInstitute/evo2.git
