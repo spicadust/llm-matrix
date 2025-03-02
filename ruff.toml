@@ -4,7 +4,6 @@ line-length = 100
 convention = "google"
 
 [format]
-docstring-code-format = true
 quote-style = "double"
 indent-style = "space"
 line-ending = "lf"
