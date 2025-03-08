@@ -1,8 +1,6 @@
 import argparse
 import os
 
-import numpy as np
-import pandas as pd
 import torch
 from Bio import SeqIO
 from tqdm import tqdm
@@ -104,3 +102,50 @@ def main():
     else:
         # Process sequences in batches
         for i in tqdm(range(0, len(sequences), args.batch_size)):
+            batch = sequences[i : i + args.batch_size]
+            try:
+                # Extract sequences and headers
+                batch_sequences = [str(record.seq) for record in batch]
+                batch_headers = [record.description for record in batch]
+
+                # Make sure GPU memory is cleared before processing
+                torch.cuda.empty_cache()
+
+                # Tokenize and get embeddings
+                input_ids = torch.stack(
+                    [
+                        torch.tensor(
+                            evo2_model.tokenizer.tokenize(seq),
+                            dtype=torch.int,
+                        ).to("cuda:0")
+                        for seq in batch_sequences
+                    ]
+                )
+
+                # Get embeddings with explicit dtype to avoid BFloat16 issues
+                with torch.amp.autocast("cuda", enabled=False):
+                    outputs, embeddings = evo2_model(
+                        input_ids, return_embeddings=True, layer_names=[args.layer_name]
+                    )
+
+                # Extract the embeddings tensor and ensure it's float32
+                embedding_tensor = embeddings[args.layer_name].to(torch.float32)
+
+                # Average over the sequence length dimension to get 1920-dim vectors
+                # Shape goes from [batch_size, n, 1920] to [batch_size, 1920]
+                avg_embeddings = embedding_tensor.mean(dim=1).cpu().numpy()
+
+                # Store results
+                for header, embedding in zip(batch_headers, avg_embeddings):
+                    results.append({"header": header, "embedding": embedding})
+
+                # Clear GPU cache to free memory
+                torch.cuda.empty_cache()
+
+            except Exception as e:
+                print(f"Error processing batch starting at sequence {i}: {e}")
+                # Record the failed sequences
+                failed_sequences.extend(batch_headers)
+                # Force GPU memory cleanup
+                torch.cuda.empty_cache()
+                continue
