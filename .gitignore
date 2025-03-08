@@ -1,6 +1,7 @@
 results/*
 dataset/*
 checkpoints/*
+models/*
 *.egg-info
 *.pyc
 build
