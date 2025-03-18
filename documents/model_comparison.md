@@ -18,7 +18,7 @@ Host prediction accuracy: 0.0916 <br>
 
 ### evo2_7b
 
-**running was stopped at around 89% of the progress**
+**running was stopped at around 89% of the progress** <br>
 Original embeddings count: 21312 <br>
 Matched embeddings count: 6555 <br>
 Number of genus classes: 358 <br>
