@@ -95,9 +95,15 @@ Host prediction accuracy: 0.0308
 
 
 ### evo2_40b
-10474 sequences in the input but only got 3150 due to memory issue; batch size = 2
+10474 sequences in the input; only got 3150 due to memory issue; batch size = 2
 Original embeddings count: 3150
 Matched embeddings count: 3150
 Train Loss: 2.6096, Val Loss: 2.6637
 Train Accuracies: {'genus': '0.8208', 'family': '0.8787', 'class': '0.8861', 'host': '0.6952'}
 Val Accuracies: {'genus': '0.8190', 'family': '0.8857', 'class': '0.8794', 'host': '0.7333'}
+
+Test
+9345 seqs in the input; only got 5344
+Class prediction accuracy: 0.1334
+Family prediction accuracy: 0.0571
+Host prediction accuracy: 0.0298
