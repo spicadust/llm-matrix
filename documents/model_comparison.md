@@ -107,3 +107,57 @@ Test
 Class prediction accuracy: 0.1334
 Family prediction accuracy: 0.0571
 Host prediction accuracy: 0.0298
+
+--- Testing on CLASS task ---
+Number of test samples: 5344
+Class prediction accuracy: 0.1334
+                  precision    recall  f1-score   support
+
+  Caudoviricetes       1.00      0.13      0.24      5335
+  Faserviricetes       0.00      0.50      0.00         4
+Tectiliviricetes       0.00      0.00      0.00         5
+
+       micro avg       0.31      0.13      0.19      5344
+       macro avg       0.33      0.21      0.08      5344
+    weighted avg       1.00      0.13      0.23      5344
+
+
+--- Testing on FAMILY task ---
+Number of test samples: 80
+Warning: 45 samples have unknown labels and will be excluded
+Family prediction accuracy: 0.0571
+                   precision    recall  f1-score   support
+
+Autographiviridae       0.00      0.00      0.00        23
+   Herelleviridae       0.00      0.00      0.00         3
+       Inoviridae       0.22      0.50      0.31         4
+     Tectiviridae       0.00      0.00      0.00         5
+...
+        micro avg       0.20      0.06      0.09        35
+        macro avg       0.06      0.12      0.08        35
+     weighted avg       0.03      0.06      0.04        35
+
+--- Testing on HOST task ---
+Number of test samples: 5404
+Warning: 4968 samples have unknown labels and will be excluded
+Host prediction accuracy: 0.0298
+                  precision    recall  f1-score   support
+
+   Acinetobacter       0.00      0.00      0.00         2
+    Enterococcus       0.00      0.00      0.00         1
+         Erwinia       0.00      0.00      0.00        50
+     Escherichia       0.05      0.40      0.09        10
+  Flavobacterium       0.00      0.00      0.00         8
+      Klebsiella       0.00      0.00      0.00         9
+  Microbacterium       0.27      0.35      0.31        17
+     Pseudomonas       0.29      0.01      0.01       278
+     Rhodococcus       0.00      0.00      0.00        26
+      Salmonella       0.00      0.00      0.00         3
+Stenotrophomonas       0.00      0.00      0.00         5
+    Streptomyces       0.00      0.00      0.00        21
+          Vibrio       0.00      0.00      0.00         4
+     Xanthomonas       0.03      0.50      0.05         2
+
+       micro avg       0.06      0.03      0.04       436
+       macro avg       0.05      0.09      0.03       436
+    weighted avg       0.19      0.03      0.02       436
