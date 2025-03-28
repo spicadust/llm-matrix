@@ -53,6 +53,8 @@ number of host phylums: 24
 number of host domains: 1
 
 ### new matrix dataset
+viral sequences assembled from metagenomes; sequences are from viruses found in the phyllosphere (the surface of plant leaves)
+no ground-truth host
 
 seq length
 count      8399.000000
@@ -93,7 +95,30 @@ taxmyphage_viral_Subfamily	Predicted viral subfamily from taxmyphage
 taxmyphage_viral_Genus	Predicted viral genus from taxmyphage
 taxmyphage_viral_Species	Predicted viral species from taxmyphage
 
+Species is nan (taxmyphage): 0.9978568877247291
+Genus is nan (taxmyphage): 0.9978568877247291
+Sub-family is nan (taxmyphage): 0.9978568877247291
+Family is nan (taxmyphage): 0.9978568877247291
+Order is nan (taxmyphage): 0.9978568877247291
+Class is nan (taxmyphage): 0.9978568877247291
+Phylum is nan (taxmyphage): 0.9978568877247291
+Kingdom is nan (taxmyphage): 0.9978568877247291
+Family is nan (PhaGCN): 0.41338254554113585
+Order is nan (PhaGCN): 1.0
+Class is nan (PhaGCN): 0.41338254554113585
+Phyllum is nan (PhaGCN): 0.41338254554113585
+Host genus is nan (iPHoP): 0.6085248243838552
+Host family is nan (iPHoP): 0.6091201333492082
+Host order is nan (iPHoP): 0.6085248243838552
+Host class is nan (iPHoP): 0.6085248243838552
+Host phyllum is nan (iPHoP): 0.6085248243838552
+
+Taxmyphage's predictions can be treated as "ground truth"; good at classifying sequences that are already known — ones that exist in current databases
+PhaGCN works better for lower-resolution taxonomy, especially at the family level; useful when working with novel sequences
+
 ### strain dataset
+Comes from bacterial isolates — ground-truth host available
+
 seq lenth
 count      3239.000000
 mean      31292.787589
