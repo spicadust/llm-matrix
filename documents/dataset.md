@@ -95,7 +95,7 @@ taxmyphage_viral_Subfamily	Predicted viral subfamily from taxmyphage
 taxmyphage_viral_Genus	Predicted viral genus from taxmyphage
 taxmyphage_viral_Species	Predicted viral species from taxmyphage
 
-Species is nan (taxmyphage): 0.9978568877247291
+Species is nan (taxmyphage): 0.9978568877247291 (18/8399 phages have this)
 Genus is nan (taxmyphage): 0.9978568877247291
 Sub-family is nan (taxmyphage): 0.9978568877247291
 Family is nan (taxmyphage): 0.9978568877247291
@@ -103,10 +103,12 @@ Order is nan (taxmyphage): 0.9978568877247291
 Class is nan (taxmyphage): 0.9978568877247291
 Phylum is nan (taxmyphage): 0.9978568877247291
 Kingdom is nan (taxmyphage): 0.9978568877247291
+
 Family is nan (PhaGCN): 0.41338254554113585
 Order is nan (PhaGCN): 1.0
 Class is nan (PhaGCN): 0.41338254554113585
 Phyllum is nan (PhaGCN): 0.41338254554113585
+
 Host genus is nan (iPHoP): 0.6085248243838552
 Host family is nan (iPHoP): 0.6091201333492082
 Host order is nan (iPHoP): 0.6085248243838552
@@ -115,6 +117,8 @@ Host phyllum is nan (iPHoP): 0.6085248243838552
 
 Taxmyphage's predictions can be treated as "ground truth"; good at classifying sequences that are already known — ones that exist in current databases
 PhaGCN works better for lower-resolution taxonomy, especially at the family level; useful when working with novel sequences
+
+taxmyphage info to little to use
 
 ### strain dataset
 Comes from bacterial isolates — ground-truth host available
@@ -177,16 +181,19 @@ iphop_host_family is nan: 0.07286199444272924
 iphop_host_order is nan: 0.07286199444272924
 iphop_host_class is nan: 0.07286199444272924
 iphop_host_phylum is nan: 0.07286199444272924
+
 ground_truth_host_species is nan: 0.0
 ground_truth_host_genus is nan: 0.0
 ground_truth_host_family is nan: 0.0
 ground_truth_host_order is nan: 0.0
 ground_truth_host_class is nan: 0.0
 ground_truth_host_phylum is nan: 0.0
+
 PhaGCN_viral_family is nan: 0.32201296696511267
 PhaGCN_viral_order is nan: 1.0
 PhaGCN_viral_class is nan: 0.32201296696511267
 PhaGCN_viral_phylum is nan: 0.32201296696511267
+
 taxmyphage_viral_Species is nan: 1.0
 taxmyphage_viral_Genus is nan: 1.0
 taxmyphage_viral_Subfamily is nan: 1.0
@@ -195,3 +202,5 @@ taxmyphage_viral_Order is nan: 1.0
 taxmyphage_viral_Class is nan: 1.0
 taxmyphage_viral_Phylum is nan: 1.0
 taxmyphage_viral_Kingdom is nan: 1.0
+
+- maybe just use ground truth host taxonomy and taxmyphage viral taxonomy
