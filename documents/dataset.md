@@ -118,8 +118,7 @@ Host phyllum is nan (iPHoP): 0.6085248243838552
 Taxmyphage's predictions can be treated as "ground truth"; good at classifying sequences that are already known — ones that exist in current databases
 PhaGCN works better for lower-resolution taxonomy, especially at the family level; useful when working with novel sequences
 
-taxmyphage info to little to use
-
+matrix_metadata_curated: ['vOTU', 'length', 'Species', 'Genus', 'Sub-family', 'Family', 'Order','Class', 'Phylum', 'Kingdom', 'iphop_host_phylum', 'iphop_host_class', 'iphop_host_order', 'iphop_host_family', 'iphop_host_genus']
 ### strain dataset
 Comes from bacterial isolates — ground-truth host available
 
@@ -203,4 +202,4 @@ taxmyphage_viral_Class is nan: 1.0
 taxmyphage_viral_Phylum is nan: 1.0
 taxmyphage_viral_Kingdom is nan: 1.0
 
-- maybe just use ground truth host taxonomy and taxmyphage viral taxonomy
+- maybe just use ground truth host taxonomy and PhaGCN viral taxonomy
