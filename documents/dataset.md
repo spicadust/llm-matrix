@@ -2937,7 +2937,444 @@ Kayfunavirus new_name: 1
 Wellingtonvirus wellington: 1
 Irrigatiovirus new_name: 1
 
+### curated matrix taxonomy
 
+#### Species Counts:
+--------------------------------------------------
+NaN: 8381
+Uliginvirus new_name: 2
+Sendosyvirus new_name: 2
+Pahexavirus new_name: 2
+Berlinvirus new_name: 1
+Eganvirus new_name: 1
+Eracentumvirus new_name: 1
+Dibbivirus new_name: 1
+Elunavirus new_name: 1
+Cronosvirus new_name: 1
+Murrayvirus new_name: 1
+Loessnervirus new_name: 1
+Sauletekiovirus new_name: 1
+Kayfunavirus new_name: 1
+Wellingtonvirus wellington: 1
+Irrigatiovirus new_name: 1
+
+
+#### Genus Counts:
+--------------------------------------------------
+NaN: 8381
+Uliginvirus: 2
+Sendosyvirus: 2
+Pahexavirus: 2
+Berlinvirus: 1
+Eganvirus: 1
+Eracentumvirus: 1
+Dibbivirus: 1
+Elunavirus: 1
+Cronosvirus: 1
+Murrayvirus: 1
+Loessnervirus: 1
+Sauletekiovirus: 1
+Kayfunavirus: 1
+Wellingtonvirus: 1
+Irrigatiovirus: 1
+
+
+#### Sub-family Counts:
+--------------------------------------------------
+NaN: 8391
+Studiervirinae: 3
+Colwellvirinae: 2
+Molineuxvirinae: 1
+Melnykvirinae: 1
+Cleopatravirinae: 1
+
+
+#### Family Counts:
+--------------------------------------------------
+NaN: 3476
+Peduoviridae: 1488
+Vilmaviridae: 620
+Orlajensenviridae: 613
+Mesyanzhinovviridae: 522
+Drexlerviridae: 390
+Zierdtviridae: 339
+Casjensviridae: 303
+Autographiviridae: 173
+Chaseviridae: 136
+Kyanoviridae: 79
+Schitoviridae: 71
+Salasmaviridae: 66
+Zobellviridae: 37
+Herelleviridae: 30
+Straboviridae: 24
+Ackermannviridae: 18
+Demerecviridae: 12
+Rountreeviridae: 1
+Chimalliviridae: 1
+
+
+#### Order Counts:
+--------------------------------------------------
+NaN: 8399
+
+
+#### Class Counts:
+--------------------------------------------------
+Caudoviricetes: 4929
+NaN: 3470
+
+
+#### Phylum Counts:
+--------------------------------------------------
+Uroviricota: 4929
+NaN: 3470
+
+
+#### Kingdom Counts:
+--------------------------------------------------
+NaN: 8381
+Heunggongvirae: 18
+
+
+#### iphop_host_phylum Counts:
+--------------------------------------------------
+NaN: 5111
+Pseudomonadota: 2358
+Actinomycetota: 545
+Bacteroidota: 334
+Bacillota: 27
+Deinococcota: 11
+Cyanobacteriota: 7
+Candidatus Saccharibacteria: 3
+Chloroflexota: 1
+Fusobacteriota: 1
+Nitrospirota: 1
+
+
+#### iphop_host_class Counts:
+--------------------------------------------------
+NaN: 5111
+Gammaproteobacteria: 1296
+Alphaproteobacteria: 984
+Actinomycetes: 538
+Cytophagia: 301
+Betaproteobacteria: 78
+Bacteroidia: 24
+Bacilli: 15
+Deinococci: 11
+Clostridia: 10
+Cyanophyceae: 7
+Coriobacteriia: 7
+Flavobacteriia: 5
+Sphingobacteriia: 4
+Candidatus Saccharimonadia: 3
+Negativicutes: 2
+Anaerolineae: 1
+Fusobacteriia: 1
+Nitrospiria: 1
+
+
+#### iphop_host_order Counts:
+--------------------------------------------------
+NaN: 5111
+Enterobacterales: 694
+Sphingomonadales: 680
+Pseudomonadales: 576
+Cytophagales: 301
+Hyphomicrobiales: 300
+Micrococcales: 275
+Mycobacteriales: 177
+Burkholderiales: 78
+Propionibacteriales: 41
+Kitasatosporales: 25
+Bacteroidales: 24
+Lysobacterales: 13
+Lactobacillales: 11
+Deinococcales: 11
+Geodermatophilales: 9
+Eubacteriales: 8
+Coriobacteriales: 7
+Bifidobacteriales: 6
+Nostocales: 5
+Flavobacteriales: 5
+Bacillales: 4
+Moraxellales: 4
+Vibrionales: 4
+Sphingobacteriales: 4
+Pseudonocardiales: 3
+Caulobacterales: 3
+Candidatus Saccharimonadales: 3
+Lachnospirales: 2
+Selenomonadales: 2
+Oceanospirillales: 2
+Actinomycetales: 2
+Oscillatoriales: 1
+Legionellales: 1
+Aggregatilineales: 1
+Synechococcales: 1
+Fusobacteriales: 1
+Nitrospirales: 1
+Methylococcales: 1
+Cellvibrionales: 1
+Rhodobacterales: 1
+
+
+#### iphop_host_family Counts:
+--------------------------------------------------
+NaN: 5116
+Sphingomonadaceae: 677
+Pseudomonadaceae: 576
+Erwiniaceae: 374
+Hymenobacteraceae: 300
+Microbacteriaceae: 248
+Methylobacteriaceae: 131
+Enterobacteriaceae: 127
+Mycobacteriaceae: 122
+Rhizobiaceae: 118
+Yersiniaceae: 103
+Nocardiaceae: 51
+Hafniaceae: 42
+Comamonadaceae: 40
+Nocardioidaceae: 36
+Aurantimonadaceae: 29
+Morganellaceae: 28
+Streptomycetaceae: 25
+Oxalobacteraceae: 23
+Bacteroidaceae: 21
+Bruguierivoracaceae: 17
+Micrococcaceae: 15
+Lysobacteraceae: 13
+Deinococcaceae: 11
+Geodermatophilaceae: 9
+Oscillospiraceae: 8
+Alcaligenaceae: 8
+Enterococcaceae: 8
+Phyllobacteriaceae: 7
+Promicromonosporaceae: 7
+Nitrobacteraceae: 7
+Bifidobacteriaceae: 6
+Nostocaceae: 5
+Propionibacteriaceae: 5
+Moraxellaceae: 4
+Vibrionaceae: 4
+Coriobacteriaceae: 4
+Sphingobacteriaceae: 4
+Devosiaceae: 3
+Caulobacteraceae: 3
+Carnobacteriaceae: 3
+Brucellaceae: 3
+Candidatus Saccharimonadaceae: 3
+Burkholderiaceae: 3
+Weeksellaceae: 3
+Atopobiaceae: 3
+Gordoniaceae: 3
+Pseudonocardiaceae: 3
+Pectobacteriaceae: 3
+Flavobacteriaceae: 2
+Cellulomonadaceae: 2
+Selenomonadaceae: 2
+Halomonadaceae: 2
+Actinomycetaceae: 2
+Sanguibacteraceae: 2
+Lachnospiraceae: 2
+Erythrobacteraceae: 2
+Bacillaceae: 2
+Prevotellaceae: 2
+Hyphomicrobiaceae: 2
+Nitrospiraceae: 1
+Rikenellaceae: 1
+Corynebacteriaceae: 1
+Sphaerotilaceae: 1
+Fusobacteriaceae: 1
+Methylococcaceae: 1
+Coxiellaceae: 1
+Sphingosinicellaceae: 1
+Demequinaceae: 1
+Microcoleaceae: 1
+Candidatus Flexifilaceae: 1
+Prochlorococcaceae: 1
+Cytophagaceae: 1
+Porticoccaceae: 1
+Roseobacteraceae: 1
+
+
+#### iphop_host_genus Counts:
+--------------------------------------------------
+NaN: 5111
+Sphingomonas: 655
+Pseudomonas: 563
+Hymenobacter: 300
+Pantoea: 252
+Mycobacterium: 122
+Methylobacterium: 122
+Erwinia: 103
+Curtobacterium: 96
+Rathayibacter: 44
+Rahnella: 44
+Rhizobium: 43
+Hafnia: 42
+Rhodococcus: 42
+Agrobacterium: 39
+Frigoribacterium: 32
+Nocardioides: 30
+Escherichia: 29
+Aureimonas: 28
+Variovorax: 28
+Enterobacter: 27
+Klebsiella: 26
+Streptomyces: 25
+Yersinia: 24
+Microbacterium: 23
+Bacteroides: 20
+Neorhizobium: 18
+Ewingella: 17
+Serratia: 17
+Sodalis: 17
+Telluria: 15
+Clavibacter: 15
+Plantibacter: 13
+Stutzerimonas: 13
+Herbiconiux: 13
+Citrobacter: 11
+Stenotrophomonas: 11
+Deinococcus: 11
+Providencia: 10
+Novosphingobium: 10
+Sphingobium: 10
+Comamonas: 9
+Rosenbergiella: 9
+Microvirga: 9
+Arthrobacter: 9
+Salmonella: 8
+Enterococcus: 8
+Photorhabdus: 7
+Achromobacter: 7
+Ruminiclostridium: 6
+Mixta: 6
+Williamsia: 6
+Bradyrhizobium: 6
+Bifidobacterium: 6
+Pararhizobium: 6
+Cronobacter: 6
+Marmoricola: 6
+Klenkia: 6
+Sinorhizobium: 5
+Paenarthrobacter: 5
+Nostoc: 5
+Cellulosimicrobium: 5
+Leclercia: 5
+Pedobacter: 4
+Agromyces: 4
+Acinetobacter: 4
+Candidatus Hamiltonella: 4
+Proteus: 4
+Cutibacterium: 4
+Collinsella: 4
+Arsenophonus: 4
+Shinella: 3
+Janthinobacterium: 3
+Gordonia: 3
+Thermophilibacter: 3
+Candidatus Microsaccharimonas: 3
+Vibrio: 3
+Izhakiella: 3
+Mesorhizobium: 3
+Brevundimonas: 3
+Carnobacterium: 3
+Devosia: 3
+Xylophilus: 3
+Duganella: 3
+Ochrobactrum: 3
+Promicromonospora: 2
+Pseudorhizobium: 2
+Kosakonia: 2
+Scandinavium: 2
+Acidovorax: 2
+Geodermatophilus: 2
+Pectobacterium: 2
+Xenorhabdus: 2
+Nocardia: 2
+Collimonas: 2
+Hyphomicrobium: 2
+Pauljensenia: 2
+Halomonas: 2
+Atlantibacter: 2
+Sanguibacter: 2
+Exiguobacterium: 2
+Megamonas: 2
+Oerskovia: 2
+Subtercola: 2
+Chryseobacterium: 2
+Aminobacter: 2
+Smaragdicoccus: 1
+Pseudonocardia: 1
+Candidatus Scatomonas: 1
+Candidatus Flexicrinis: 1
+Cryobacterium: 1
+Microcoleus: 1
+Tamlana: 1
+Phocaeicola: 1
+Candidatus Stercorousia: 1
+Paraburkholderia: 1
+Arachnia: 1
+Sphingopyxis: 1
+Leucobacter: 1
+Methyloglobulus: 1
+Phaseolibacter: 1
+Pluralibacter: 1
+Pseudescherichia: 1
+Maritimibacter: 1
+Samsonia: 1
+Prevotella: 1
+Alistipes: 1
+Buttiauxella: 1
+Flavobacterium: 1
+Photobacterium: 1
+Methylibium: 1
+Frondihabitans: 1
+Fictibacillus: 1
+Ensifer: 1
+Xanthomonas: 1
+Erythrobacter: 1
+Aurantimonas: 1
+Rickettsiella: 1
+Rouxiella: 1
+Demequina: 1
+Polynucleobacter: 1
+Candidatus Regiella: 1
+Mediterraneibacter: 1
+Spirosoma: 1
+Kibdelosporangium: 1
+Porticoccus: 1
+Pseudoxanthomonas: 1
+Nitrospira: 1
+Phyllobacterium: 1
+Corynebacterium: 1
+Pelagerythrobacter: 1
+Epilithonimonas: 1
+Faecalibacterium: 1
+Alloprevotella: 1
+Bordetella: 1
+Ruminococcus: 1
+Pontimonas: 1
+Kocuria: 1
+Actinosynnema: 1
+Parasynechococcus: 1
+Afipia: 1
+Morganella: 1
+Leifsonia: 1
+Mycoplana: 1
+Sphingomicrobium: 1
+Aquibium: 1
+Cupriavidus: 1
+Pedomonas: 1
+Blastococcus: 1
+Xenophilus: 1
+Agreia: 1
+Tenebrionibacter: 1
+Bacillus: 1
+
+s
 
 ## strain dataset
 Comes from bacterial isolates — ground-truth host available
