@@ -3870,3 +3870,28 @@ NaN: 3239
  Rhodococcus sp. Leaf247: 1
  Variovorax sp.: 1
 
+
+## millard + matrix
+
+millard:
+'Genus', 'Sub-family', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom', 'Realm', 
+'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus'
+
+matrix_metadata_curated: 
+'Species', 'Genus', 'Sub-family', 'Family', 'Order','Class', 'Phylum', 'Kingdom', 
+'iphop_host_phylum', 'iphop_host_class', 'iphop_host_order', 'iphop_host_family', 'iphop_host_genus'
+
+combined:
+'Genus', 'Sub-family', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom'
+'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus'
+
+['seq_id', 'length', 'Genus', 'Sub-family', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom', 'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus']
+
+# millard + strain
+strain:
+PhaGCN_viral_family, PhaGCN_viral_order, PhaGCN_viral_class, PhaGCN_viral_phylum
+ground_truth_host_species, ground_truth_host_genus, ground_truth_host_family, ground_truth_host_order, ground_truth_host_class, ground_truth_host_phylum
+
+combined:
+'Family', 'Order', 'Class', 'Phylum'
+'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus'
