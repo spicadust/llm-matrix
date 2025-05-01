@@ -730,3 +730,8 @@ Unknown labels: {' Actinomycetota', ' Bacteroidota', ' Bacillota', ' Pseudomonad
 These samples will be excluded from evaluation
 
 No valid test samples for host Host_phylum
+
+#### train_millardmatrix; test_matrix
+
+Train Accuracies: {'Genus': '0.8814', 'Sub-family': '0.9855', 'Family': '0.9065', 'Order': '0.9950', 'Class': '0.9981', 'Phylum': '0.9981', 'Kingdom': '0.9984', 'Host_genus': '0.8463', 'Host_family': '0.9043', 'Host_order': '0.9445', 'Host_class': '0.9771', 'Host_phylum': '0.9857'}
+Val Accuracies: {'Genus': '0.9044', 'Sub-family': '0.9854', 'Family': '0.9003', 'Order': '0.9942', 'Class': '0.9975', 'Phylum': '0.9975', 'Kingdom': '0.9970', 'Host_genus': '0.8509', 'Host_family': '0.9072', 'Host_order': '0.9398', 'Host_class': '0.9734', 'Host_phylum': '0.9856'}
