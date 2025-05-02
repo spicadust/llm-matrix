@@ -1365,7 +1365,7 @@ Warning: Found 4 unknown viral Family labels in test data:
 Unknown labels: {'Rountreeviridae', 'Schitoviridae', 'Zobellviridae', 'Demerecviridae'}
 These samples will be excluded from evaluation
 
-Viral Family Accuracy: 0.3200
+**Viral Family** Accuracy: 0.3200
 Number of test samples: 4775
 Number of classes in test: 14
 
@@ -1392,7 +1392,7 @@ Mesyanzhinovviridae       0.33      0.04      0.07       520
        weighted avg       0.21      0.32      0.18      4775
 
 
-Viral Class Accuracy: 1.0000
+**Viral Class Accuracy**: 1.0000
 Number of test samples: 4894
 Number of classes in test: 1
 
@@ -1406,7 +1406,7 @@ Caudoviricetes       1.00      1.00      1.00      4894
   weighted avg       1.00      1.00      1.00      4894
 
 
-Viral Phylum Accuracy: 1.0000
+**Viral Phylum Accuracy**: 1.0000
 Number of test samples: 4894
 Number of classes in test: 1
 
@@ -1450,4 +1450,4 @@ These samples will be excluded from evaluation
 
 No valid test samples for host Host_phylum
 
-While MILLARD and MATRIX share some same hosts, the hosts in STRAIN is completely differerent.
+**While MILLARD and MATRIX share some same hosts, the hosts in STRAIN is completely differerent.**
