@@ -3885,8 +3885,6 @@ combined:
 'Genus', 'Sub-family', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom'
 'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus'
 
-['seq_id', 'length', 'Genus', 'Sub-family', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom', 'Host_phylum', 'Host_class', 'Host_order', 'Host_family', 'Host_genus']
-
 # millard + strain
 strain:
 PhaGCN_viral_family, PhaGCN_viral_order, PhaGCN_viral_class, PhaGCN_viral_phylum
