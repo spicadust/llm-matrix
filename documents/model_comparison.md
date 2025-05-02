@@ -1341,3 +1341,113 @@ Classification Report:
       micro avg       0.99      0.92      0.96      1618
       macro avg       0.97      0.55      0.66      1618
    weighted avg       0.99      0.92      0.95      1618
+
+#### train_strain; test_matrix
+
+Original embeddings count: 3238
+Matched embeddings count: 3238
+Percentage retained: 100.00%
+Family: 16 classes
+Class: 2 classes
+Phylum: 2 classes
+Host_genus: 41 classes
+Host_family: 21 classes
+Host_order: 13 classes
+Host_class: 6 classes
+Host_phylum: 4 classes
+
+Train Loss: 0.0365, Val Loss: 0.0826
+Train Accuracies: {'Family': '0.9828', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9777', 'Host_family': '0.9963', 'Host_order': '0.9980', 'Host_class': '1.0000', 'Host_phylum': '0.9997'}
+Val Accuracies: {'Family': '0.9757', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9870', 'Host_family': '0.9948', 'Host_order': '0.9974', 'Host_class': '0.9974', 'Host_phylum': '0.9974'}
+
+Number of test samples: 8360
+Warning: Found 4 unknown viral Family labels in test data:
+Unknown labels: {'Rountreeviridae', 'Schitoviridae', 'Zobellviridae', 'Demerecviridae'}
+These samples will be excluded from evaluation
+
+Viral Family Accuracy: 0.3200
+Number of test samples: 4775
+Number of classes in test: 14
+
+Classification Report:
+                     precision    recall  f1-score   support
+
+   Ackermannviridae       0.00      0.00      0.00        17
+  Autographiviridae       0.02      0.01      0.01       168
+     Casjensviridae       0.00      0.00      0.00       303
+       Chaseviridae       0.11      0.02      0.03       131
+     Drexlerviridae       0.39      0.24      0.29       390
+     Herelleviridae       0.00      0.00      0.00        30
+       Kyanoviridae       0.00      0.00      0.00        76
+Mesyanzhinovviridae       0.33      0.04      0.07       520
+  Orlajensenviridae       0.00      0.00      0.00       613
+       Peduoviridae       0.32      0.95      0.48      1487
+     Salasmaviridae       0.00      0.00      0.00        66
+      Straboviridae       0.00      0.00      0.00        21
+       Vilmaviridae       0.00      0.00      0.00       617
+      Zierdtviridae       0.54      0.02      0.04       336
+
+           accuracy                           0.32      4775
+          macro avg       0.12      0.09      0.07      4775
+       weighted avg       0.21      0.32      0.18      4775
+
+
+Viral Class Accuracy: 1.0000
+Number of test samples: 4894
+Number of classes in test: 1
+
+Classification Report:
+                precision    recall  f1-score   support
+
+Caudoviricetes       1.00      1.00      1.00      4894
+
+      accuracy                           1.00      4894
+     macro avg       1.00      1.00      1.00      4894
+  weighted avg       1.00      1.00      1.00      4894
+
+
+Viral Phylum Accuracy: 1.0000
+Number of test samples: 4894
+Number of classes in test: 1
+
+Classification Report:
+              precision    recall  f1-score   support
+
+ Uroviricota       1.00      1.00      1.00      4894
+
+    accuracy                           1.00      4894
+   macro avg       1.00      1.00      1.00      4894
+weighted avg       1.00      1.00      1.00      4894
+
+
+Warning: Found 172 unknown host Host_genus labels in test data:
+Unknown labels: {'Megamonas', 'Collimonas', 'Klenkia', 'Faecalibacterium', 'Blastococcus', 'Variovorax', 'Pontimonas', 'Mediterraneibacter', 'Microbacterium', 'Demequina', 'Bifidobacterium', 'Phocaeicola', 'Xylophilus', 'Collinsella', 'Telluria', 'Afipia', 'Brevundimonas', 'Phyllobacterium', 'Geodermatophilus', 'Arachnia', 'Candidatus Microsaccharimonas', 'Pantoea', 'Serratia', 'Stenotrophomonas', 'Rouxiella', 'Tamlana', 'Bacteroides', 'Klebsiella', 'Pectobacterium', 'Agromyces', 'Pseudomonas', 'Janthinobacterium', 'Salmonella', 'Plantibacter', 'Frigoribacterium', 'Frondihabitans', 'Bacillus', 'Clavibacter', 'Photorhabdus', 'Marmoricola', 'Photobacterium', 'Buttiauxella', 'Cellulosimicrobium', 'Novosphingobium', 'Pseudorhizobium', 'Nostoc', 'Duganella', 'Polynucleobacter', 'Ensifer', 'Hyphomicrobium', 'Microcoleus', 'Porticoccus', 'Xenophilus', 'Bordetella', 'Smaragdicoccus', 'Ewingella', 'Methylobacterium', 'Herbiconiux', 'Phaseolibacter', 'Nitrospira', 'Rhodococcus', 'Pluralibacter', 'Exiguobacterium', 'Leclercia', 'Scandinavium', 'Cronobacter', 'Mycobacterium', 'Cryobacterium', 'Epilithonimonas', 'Ochrobactrum', 'Chryseobacterium', 'Enterococcus', 'Subtercola', 'Microvirga', 'Izhakiella', 'Arsenophonus', 'Candidatus Flexicrinis', 'Methyloglobulus', 'Paraburkholderia', 'Sphingopyxis', 'Pedobacter', 'Mixta', 'Leifsonia', 'Williamsia', 'Sphingomicrobium', 'Pseudoxanthomonas', 'Hafnia', 'Parasynechococcus', 'Maritimibacter', 'Escherichia', 'Stutzerimonas', 'Mesorhizobium', 'Ruminococcus', 'Oerskovia', 'Deinococcus', 'Devosia', 'Promicromonospora', 'Kibdelosporangium', 'Samsonia', 'Pseudescherichia', 'Agreia', 'Aminobacter', 'Acidovorax', 'Carnobacterium', 'Agrobacterium', 'Mycoplana', 'Enterobacter', 'Yersinia', 'Alistipes', 'Actinosynnema', 'Sanguibacter', 'Aureimonas', 'Xenorhabdus', 'Streptomyces', 'Acinetobacter', 'Thermophilibacter', 'Hymenobacter', 'Sinorhizobium', 'Morganella', 'Erythrobacter', 'Halomonas', 'Bradyrhizobium', 'Sodalis', 'Kocuria', 'Alloprevotella', 'Proteus', 'Tenebrionibacter', 'Kosakonia', 'Citrobacter', 'Aurantimonas', 'Cutibacterium', 'Fictibacillus', 'Rhizobium', 'Neorhizobium', 'Pauljensenia', 'Erwinia', 'Pararhizobium', 'Rosenbergiella', 'Nocardia', 'Rickettsiella', 'Atlantibacter', 'Candidatus Regiella', 'Leucobacter', 'Arthrobacter', 'Candidatus Hamiltonella', 'Pedomonas', 'Methylibium', 'Shinella', 'Achromobacter', 'Paenarthrobacter', 'Candidatus Scatomonas', 'Sphingomonas', 'Rathayibacter', 'Nocardioides', 'Gordonia', 'Vibrio', 'Pelagerythrobacter', 'Providencia', 'Rahnella', 'Pseudonocardia', 'Prevotella', 'Corynebacterium', 'Sphingobium', 'Xanthomonas', 'Spirosoma', 'Candidatus Stercorousia', 'Comamonas', 'Aquibium', 'Ruminiclostridium', 'Curtobacterium', 'Cupriavidus', 'Flavobacterium'}
+These samples will be excluded from evaluation
+
+No valid test samples for host Host_genus
+
+Warning: Found 74 unknown host Host_family labels in test data:
+Unknown labels: {'Candidatus Flexifilaceae', 'Methylobacteriaceae', 'Roseobacteraceae', 'Sphingosinicellaceae', 'Burkholderiaceae', 'Sphaerotilaceae', 'Porticoccaceae', 'Corynebacteriaceae', 'Hyphomicrobiaceae', 'Cellulomonadaceae', 'Atopobiaceae', 'Moraxellaceae', 'Enterococcaceae', 'Flavobacteriaceae', 'Micrococcaceae', 'Weeksellaceae', 'Nocardioidaceae', 'Deinococcaceae', 'Aurantimonadaceae', 'Bacillaceae', 'Promicromonosporaceae', 'Lachnospiraceae', 'Vibrionaceae', 'Brucellaceae', 'Carnobacteriaceae', 'Fusobacteriaceae', 'Phyllobacteriaceae', 'Oxalobacteraceae', 'Caulobacteraceae', 'Coxiellaceae', 'Streptomycetaceae', 'Rikenellaceae', 'Erythrobacteraceae', 'Bruguierivoracaceae', 'Nitrospiraceae', 'Cytophagaceae', 'Prevotellaceae', 'Actinomycetaceae', 'Lysobacteraceae', 'Pseudomonadaceae', 'Morganellaceae', 'Hymenobacteraceae', 'Alcaligenaceae', 'Geodermatophilaceae', 'Mycobacteriaceae', 'Erwiniaceae', 'Propionibacteriaceae', 'Oscillospiraceae', 'Devosiaceae', 'Microcoleaceae', 'Coriobacteriaceae', 'Pectobacteriaceae', 'Pseudonocardiaceae', 'Demequinaceae', 'Sanguibacteraceae', 'Sphingobacteriaceae', 'Sphingomonadaceae', 'Bifidobacteriaceae', 'Selenomonadaceae', 'Methylococcaceae', 'Microbacteriaceae', 'Prochlorococcaceae', 'Yersiniaceae', 'Rhizobiaceae', 'Candidatus Saccharimonadaceae', 'Comamonadaceae', 'Halomonadaceae', 'Nocardiaceae', 'Bacteroidaceae', 'Gordoniaceae', 'Nitrobacteraceae', 'Hafniaceae', 'Nostocaceae', 'Enterobacteriaceae'}
+These samples will be excluded from evaluation
+
+No valid test samples for host Host_family
+
+Warning: Found 40 unknown host Host_order labels in test data:
+Unknown labels: {'Caulobacterales', 'Aggregatilineales', 'Selenomonadales', 'Bacteroidales', 'Kitasatosporales', 'Geodermatophilales', 'Coriobacteriales', 'Vibrionales', 'Oceanospirillales', 'Enterobacterales', 'Oscillatoriales', 'Bacillales', 'Legionellales', 'Synechococcales', 'Lachnospirales', 'Pseudomonadales', 'Micrococcales', 'Cytophagales', 'Lactobacillales', 'Eubacteriales', 'Pseudonocardiales', 'Methylococcales', 'Cellvibrionales', 'Sphingomonadales', 'Nitrospirales', 'Mycobacteriales', 'Flavobacteriales', 'Rhodobacterales', 'Deinococcales', 'Nostocales', 'Burkholderiales', 'Sphingobacteriales', 'Propionibacteriales', 'Moraxellales', 'Fusobacteriales', 'Bifidobacteriales', 'Hyphomicrobiales', 'Actinomycetales', 'Candidatus Saccharimonadales', 'Lysobacterales'}
+These samples will be excluded from evaluation
+
+No valid test samples for host Host_order
+
+Warning: Found 18 unknown host Host_class labels in test data:
+Unknown labels: {'Cyanophyceae', 'Coriobacteriia', 'Bacteroidia', 'Candidatus Saccharimonadia', 'Cytophagia', 'Anaerolineae', 'Negativicutes', 'Sphingobacteriia', 'Deinococci', 'Fusobacteriia', 'Clostridia', 'Alphaproteobacteria', 'Gammaproteobacteria', 'Actinomycetes', 'Flavobacteriia', 'Nitrospiria', 'Bacilli', 'Betaproteobacteria'}
+These samples will be excluded from evaluation
+
+No valid test samples for host Host_class
+
+Warning: Found 10 unknown host Host_phylum labels in test data:
+Unknown labels: {'Chloroflexota', 'Cyanobacteriota', 'Bacteroidota', 'Nitrospirota', 'Pseudomonadota', 'Bacillota', 'Deinococcota', 'Candidatus Saccharibacteria', 'Fusobacteriota', 'Actinomycetota'}
+These samples will be excluded from evaluation
+
+No valid test samples for host Host_phylum
+
+While MILLARD and MATRIX share some same hosts, the hosts in STRAIN is completely differerent.
