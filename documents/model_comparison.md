@@ -643,6 +643,7 @@ Candidatus Hamiltonella       0.00      0.00      0.00         4
 
 
 #### train_millard; test_strain
+
 Number of test samples: 3238
 
 **Viral Family** Accuracy: 0.1740
@@ -701,35 +702,144 @@ Classification Report:
 weighted avg       1.00      0.95      0.97      2195
 
 
-Warning: Found 41 unknown host Host_genus labels in test data:
-Unknown labels: {' Williamsia', ' Spirosoma', ' Microbacterium', ' Variovorax', ' Methylobacterium', ' Bacillus', ' Pantoea', ' Ewingella', ' Rhodococcus', ' Frondihabitans', ' Paenarthrobacter', ' Acinetobacter', ' Rahnella', ' Micrococcus', ' Rosenbergiella', ' Paracoccus', ' Frigoribacterium', ' Pseudoclavibacter', ' Dermacoccus', ' Peribacillus', ' Sphingomonas', ' Belnapia', ' Erwinia', ' Oceanobacillus', ' Pseudomonas', ' Priestia', ' Pararhizobium', ' Aureimonas', ' Rathayibacter', ' Arthrobacter', ' Serratia', ' Ralstonia', ' Brevundimonas', ' Pseudarthrobacter', ' Agromyces', ' Paraburkholderia', ' Methylopila', ' Clavibacter', ' Cytobacillus', ' Staphylococcus', ' Curtobacterium'}
+Warning: Found 20 unknown host Host_genus labels in test data:
+Unknown labels: {'Pseudoclavibacter', 'Paraburkholderia', 'Rosenbergiella', 'Spirosoma', 'Dermacoccus', 'Paenarthrobacter', 'Aureimonas', 'Oceanobacillus', 'Pseudarthrobacter', 'Methylobacterium', 'Ewingella', 'Priestia', 'Methylopila', 'Frondihabitans', 'Frigoribacterium', 'Williamsia', 'Agromyces', 'Peribacillus', 'Belnapia', 'Pararhizobium'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_genus
+Host **Host_genus** Accuracy: 0.2068
+Number of test samples: 2616
+Number of classes in test: 21
 
-Warning: Found 21 unknown host Host_family labels in test data:
-Unknown labels: {' Bacillaceae', ' Nocardiaceae', ' Pseudomonadaceae', ' Microbacteriaceae', ' Moraxellaceae', ' Burkholderiaceae', ' Methylobacteriaceae', ' Cytophagaceae', ' Micrococcaceae', ' Dermacoccaceae', ' Aurantimonadaceae', ' Acetobacteraceae', ' Paracoccaceae', ' Methylopilaceae', ' Erwiniaceae', ' Caulobacteraceae', ' Yersiniaceae', ' Comamonadaceae', ' Staphylococcaceae', ' Sphingomonadaceae', ' Rhizobiaceae'}
+Classification Report:
+                precision    recall  f1-score   support
+
+ Acinetobacter       0.92      0.55      0.69        20
+  Arthrobacter       0.50      1.00      0.67         3
+      Bacillus       0.88      0.58      0.70        12
+ Brevundimonas       0.00      0.00      0.00        21
+   Clavibacter       0.00      0.00      0.00         9
+Curtobacterium       0.00      0.00      0.00        34
+  Cytobacillus       0.00      0.00      0.00         4
+       Erwinia       0.00      0.00      0.00      1143
+Microbacterium       0.09      0.50      0.15         4
+   Micrococcus       0.00      0.00      0.00         3
+       Pantoea       0.00      0.00      0.00       138
+    Paracoccus       0.00      0.00      0.00         9
+   Pseudomonas       0.72      0.91      0.81       542
+      Rahnella       0.00      0.00      0.00        89
+     Ralstonia       0.00      0.00      0.00         2
+ Rathayibacter       0.00      0.00      0.00        19
+   Rhodococcus       0.00      0.00      0.00         1
+      Serratia       0.00      0.00      0.00        24
+  Sphingomonas       0.00      0.00      0.00       515
+Staphylococcus       0.96      1.00      0.98        23
+    Variovorax       0.00      0.00      0.00         1
+
+     micro avg       0.62      0.21      0.31      2616
+     macro avg       0.19      0.22      0.19      2616
+  weighted avg       0.17      0.21      0.19      2616
+
+
+Warning: Found 4 unknown host Host_family labels in test data:
+Unknown labels: {'Dermacoccaceae', 'Cytophagaceae', 'Methylopilaceae', 'Methylobacteriaceae'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_family
+Host **Host_family** Accuracy: 0.1794
+Number of test samples: 3206
+Number of classes in test: 17
 
-Warning: Found 13 unknown host Host_order labels in test data:
-Unknown labels: {' Hyphomicrobiales', ' Pseudomonadales', ' Micrococcales', ' Rhodobacterales', ' Sphingomonadales', ' Rhodospirillales', ' Bacillales', ' Enterobacterales', ' Burkholderiales', ' Cytophagales', ' Mycobacteriales', ' Caulobacterales', ' Moraxellales'}
+Classification Report:
+                   precision    recall  f1-score   support
+
+ Acetobacteraceae       0.00      0.00      0.00         1
+Aurantimonadaceae       0.00      0.00      0.00         3
+      Bacillaceae       1.00      0.58      0.74        24
+ Burkholderiaceae       0.00      0.00      0.00         4
+ Caulobacteraceae       0.00      0.00      0.00        21
+   Comamonadaceae       0.00      0.00      0.00         1
+      Erwiniaceae       0.00      0.00      0.00      1777
+Microbacteriaceae       0.94      0.36      0.52        90
+   Micrococcaceae       0.45      0.28      0.34        18
+    Moraxellaceae       0.92      0.60      0.73        20
+     Nocardiaceae       0.00      0.00      0.00         6
+    Paracoccaceae       0.00      0.00      0.00         9
+ Pseudomonadaceae       0.74      0.88      0.81       542
+     Rhizobiaceae       0.17      0.50      0.25         4
+Sphingomonadaceae       0.00      0.00      0.00       515
+Staphylococcaceae       0.92      1.00      0.96        23
+     Yersiniaceae       0.10      0.07      0.08       148
+
+        micro avg       0.53      0.18      0.27      3206
+        macro avg       0.31      0.25      0.26      3206
+     weighted avg       0.18      0.18      0.17      3206
+
+
+Warning: Found 1 unknown host Host_order labels in test data:
+Unknown labels: {'Cytophagales'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_order
+Host **Host_order** Accuracy: 0.6804
+Number of test samples: 3229
+Number of classes in test: 12
 
-Warning: Found 6 unknown host Host_class labels in test data:
-Unknown labels: {' Gammaproteobacteria', ' Betaproteobacteria', ' Alphaproteobacteria', ' Cytophagia', ' Actinomycetes', ' Bacilli'}
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bacillales       1.00      0.89      0.94        47
+ Burkholderiales       0.00      0.20      0.01         5
+ Caulobacterales       0.00      0.00      0.00        21
+Enterobacterales       0.99      0.85      0.92      1925
+Hyphomicrobiales       0.10      0.07      0.08        28
+   Micrococcales       0.89      0.31      0.46       110
+    Moraxellales       0.92      0.55      0.69        20
+ Mycobacteriales       0.04      0.33      0.07         6
+ Pseudomonadales       0.75      0.86      0.80       542
+ Rhodobacterales       0.00      0.00      0.00         9
+Rhodospirillales       0.00      0.00      0.00         1
+Sphingomonadales       1.00      0.00      0.00       515
+
+       micro avg       0.81      0.68      0.74      3229
+       macro avg       0.47      0.34      0.33      3229
+    weighted avg       0.93      0.68      0.72      3229
+
+
+Warning: Found 1 unknown host Host_class labels in test data:
+Unknown labels: {'Cytophagia'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_class
+Host **Host_class** Accuracy: 0.8207
+Number of test samples: 3229
+Number of classes in test: 5
 
-Warning: Found 4 unknown host Host_phylum labels in test data:
-Unknown labels: {' Actinomycetota', ' Bacteroidota', ' Bacillota', ' Pseudomonadota'}
-These samples will be excluded from evaluation
+Classification Report:
+                     precision    recall  f1-score   support
 
-No valid test samples for host Host_phylum
+      Actinomycetes       0.66      0.71      0.68       116
+Alphaproteobacteria       0.95      0.11      0.20       574
+            Bacilli       1.00      0.91      0.96        47
+ Betaproteobacteria       0.01      0.40      0.02         5
+Gammaproteobacteria       0.97      0.99      0.98      2487
+
+          micro avg       0.89      0.82      0.86      3229
+          macro avg       0.72      0.62      0.57      3229
+       weighted avg       0.96      0.82      0.83      3229
+
+
+Host **Host_phylum** Accuracy: 0.9070
+Number of test samples: 3238
+Number of classes in test: 4
+
+Classification Report:
+                precision    recall  f1-score   support
+
+Actinomycetota       0.65      0.72      0.68       116
+     Bacillota       0.98      0.94      0.96        47
+  Bacteroidota       0.00      0.00      0.00         9
+Pseudomonadota       1.00      0.92      0.95      3066
+
+     micro avg       0.98      0.91      0.94      3238
+     macro avg       0.66      0.64      0.65      3238
+  weighted avg       0.98      0.91      0.94      3238
 
 #### train_millardmatrix; test_matrix
 
@@ -1134,9 +1244,14 @@ Cyanobacteriota       0.17      1.00      0.29         1
    weighted avg       0.97      0.97      0.97      1600
 
 #### train_millardstrain; test_strain
+
+Train Loss: 0.2000, Val Loss: 0.3548
+Train Accuracies: {'Family': '0.9851', 'Order': '0.9987', 'Class': '0.9991', 'Phylum': '0.9991', 'Host_genus': '0.8733', 'Host_family': '0.9277', 'Host_order': '0.9579', 'Host_class': '0.9826', 'Host_phylum': '0.9889'}
+Val Accuracies: {'Family': '0.9840', 'Order': '0.9953', 'Class': '0.9979', 'Phylum': '0.9975', 'Host_genus': '0.8706', 'Host_family': '0.9253', 'Host_order': '0.9567', 'Host_class': '0.9793', 'Host_phylum': '0.9885'}
+
 Number of test samples: 1618
 
-**Viral Family** Accuracy: 0.9075
+**Viral Family** Accuracy: 0.9290
 Number of test samples: 1113
 Number of classes in test: 15
 
@@ -1144,29 +1259,29 @@ Classification Report:
                      precision    recall  f1-score   support
 
    Ackermannviridae       1.00      0.67      0.80         3
-  Autographiviridae       0.00      0.00      0.00         5
-     Casjensviridae       0.17      0.07      0.10        14
-       Chaseviridae       0.62      0.62      0.62         8
-     Drexlerviridae       0.96      0.97      0.97       417
+  Autographiviridae       0.60      0.60      0.60         5
+     Casjensviridae       0.57      0.29      0.38        14
+       Chaseviridae       1.00      0.75      0.86         8
+     Drexlerviridae       0.99      0.92      0.95       417
       Guelinviridae       0.00      0.00      0.00         1
      Herelleviridae       0.50      0.33      0.40         3
        Kyanoviridae       0.00      0.00      0.00         1
-Mesyanzhinovviridae       0.26      0.35      0.30        17
-  Orlajensenviridae       0.41      0.71      0.52        17
-       Peduoviridae       0.95      0.93      0.94       609
+Mesyanzhinovviridae       0.47      0.41      0.44        17
+  Orlajensenviridae       0.92      0.71      0.80        17
+       Peduoviridae       0.92      0.98      0.95       609
      Salasmaviridae       1.00      1.00      1.00         1
-      Straboviridae       0.89      1.00      0.94         8
-       Vilmaviridae       0.00      0.00      0.00         3
-      Zierdtviridae       0.29      0.33      0.31         6
+      Straboviridae       1.00      1.00      1.00         8
+       Vilmaviridae       0.25      0.33      0.29         3
+      Zierdtviridae       0.55      1.00      0.71         6
 
-          micro avg       0.91      0.91      0.91      1113
-          macro avg       0.47      0.47      0.46      1113
-       weighted avg       0.91      0.91      0.91      1113
+          micro avg       0.93      0.93      0.93      1113
+          macro avg       0.65      0.60      0.61      1113
+       weighted avg       0.93      0.93      0.93      1113
 
 
-No valid test samples for **viral Order**
+No valid test samples for viral Order
 
-**Viral Class** Accuracy: 0.9955
+**Viral Class** Accuracy: 0.9973
 Number of test samples: 1113
 Number of classes in test: 1
 
@@ -1180,167 +1295,170 @@ Caudoviricetes       1.00      1.00      1.00      1113
   weighted avg       1.00      1.00      1.00      1113
 
 
-**Viral Phylum** Accuracy: 0.9946
+**Viral Phylum** Accuracy: 0.9973
 Number of test samples: 1113
 Number of classes in test: 1
 
 Classification Report:
               precision    recall  f1-score   support
 
- Uroviricota       1.00      0.99      1.00      1113
+ Uroviricota       1.00      1.00      1.00      1113
 
-   micro avg       1.00      0.99      1.00      1113
-   macro avg       1.00      0.99      1.00      1113
-weighted avg       1.00      0.99      1.00      1113
+   micro avg       1.00      1.00      1.00      1113
+   macro avg       1.00      1.00      1.00      1113
+weighted avg       1.00      1.00      1.00      1113
 
 
-Warning: Found 7 unknown host Host_genus labels in test data:
-Unknown labels: {' Dermacoccus', ' Variovorax', ' Rhodococcus', ' Belnapia', ' Priestia', ' Aureimonas', ' Cytobacillus'}
+Warning: Found 4 unknown host Host_genus labels in test data:
+Unknown labels: {'Aureimonas', 'Belnapia', 'Dermacoccus', 'Priestia'}
 These samples will be excluded from evaluation
 
-Host **Host_genus** Accuracy: 0.8778
-Number of test samples: 1604
-Number of classes in test: 33
-
-Classification Report:
-                    precision    recall  f1-score   support
-
-     Acinetobacter       1.00      1.00      1.00         8
-         Agromyces       0.00      0.00      0.00         1
-      Arthrobacter       1.00      0.50      0.67         2
-          Bacillus       1.00      0.25      0.40         4
-     Brevundimonas       0.83      1.00      0.91        10
-       Clavibacter       0.00      0.00      0.00         2
-    Curtobacterium       0.83      0.62      0.71        16
-           Erwinia       0.91      0.98      0.94       561
-         Ewingella       0.80      0.92      0.86        13
-  Frigoribacterium       0.50      0.20      0.29         5
-    Frondihabitans       0.33      0.33      0.33         3
-  Methylobacterium       0.33      0.29      0.31         7
-       Methylopila       0.00      0.00      0.00         3
-    Microbacterium       0.00      0.00      0.00         3
-       Micrococcus       0.00      0.00      0.00         1
-    Oceanobacillus       0.00      0.00      0.00         1
-  Paenarthrobacter       1.00      0.50      0.67         2
-           Pantoea       0.80      0.38      0.51        64
-  Paraburkholderia       0.00      0.00      0.00         1
-        Paracoccus       0.00      0.00      0.00         6
-     Pararhizobium       0.00      0.00      0.00         2
-      Peribacillus       0.00      0.00      0.00         2
- Pseudarthrobacter       0.50      0.80      0.62         5
-       Pseudomonas       0.99      0.93      0.96       270
-          Rahnella       1.00      0.52      0.69        46
-         Ralstonia       0.00      0.00      0.00         1
-     Rathayibacter       0.67      0.57      0.62         7
-    Rosenbergiella       0.97      0.97      0.97       271
-          Serratia       0.00      0.00      0.00        12
-      Sphingomonas       0.97      0.90      0.93       255
-         Spirosoma       1.00      0.50      0.67         6
-    Staphylococcus       1.00      0.73      0.84        11
-        Williamsia       0.33      0.33      0.33         3
-
-         micro avg       0.93      0.88      0.91      1604
-         macro avg       0.51      0.40      0.43      1604
-      weighted avg       0.91      0.88      0.89      1604
-
-
-Warning: Found 4 unknown host Host_family labels in test data:
-Unknown labels: {' Acetobacteraceae', ' Aurantimonadaceae', ' Comamonadaceae', ' Dermacoccaceae'}
-These samples will be excluded from evaluation
-
-Host **Host_family** Accuracy: 0.8982
-Number of test samples: 1611
-Number of classes in test: 17
-
-Classification Report:
-                      precision    recall  f1-score   support
-
-         Bacillaceae       1.00      0.23      0.38        13
-    Burkholderiaceae       0.00      0.00      0.00         2
-    Caulobacteraceae       0.83      1.00      0.91        10
-       Cytophagaceae       1.00      0.33      0.50         6
-         Erwiniaceae       0.96      0.97      0.97       896
- Methylobacteriaceae       0.33      0.29      0.31         7
-     Methylopilaceae       0.00      0.00      0.00         3
-   Microbacteriaceae       0.92      0.65      0.76        37
-      Micrococcaceae       0.67      0.60      0.63        10
-       Moraxellaceae       1.00      1.00      1.00         8
-        Nocardiaceae       0.50      0.25      0.33         4
-       Paracoccaceae       0.00      0.00      0.00         6
-    Pseudomonadaceae       0.99      0.93      0.96       270
-        Rhizobiaceae       0.00      0.00      0.00         2
-   Sphingomonadaceae       0.97      0.89      0.93       255
-   Staphylococcaceae       1.00      0.73      0.84        11
-        Yersiniaceae       0.91      0.44      0.59        71
-
-           micro avg       0.96      0.90      0.93      1611
-           macro avg       0.65      0.49      0.54      1611
-        weighted avg       0.95      0.90      0.92      1611
-
-
-Warning: Found 1 unknown host Host_order labels in test data:
-Unknown labels: {' Rhodospirillales'}
-These samples will be excluded from evaluation
-
-Host **Host_order** Accuracy: 0.9239
-Number of test samples: 1617
-Number of classes in test: 12
+Host **Host_genus** Accuracy: 0.8975
+Number of test samples: 1610
+Number of classes in test: 36
 
 Classification Report:
                    precision    recall  f1-score   support
 
-       Bacillales       1.00      0.50      0.67        24
-  Burkholderiales       0.00      0.00      0.00         3
-  Caulobacterales       0.77      1.00      0.87        10
-     Cytophagales       1.00      0.50      0.67         6
- Enterobacterales       1.00      0.97      0.99       967
- Hyphomicrobiales       0.40      0.13      0.20        15
-    Micrococcales       0.84      0.73      0.78        49
-     Moraxellales       1.00      1.00      1.00         8
-  Mycobacteriales       1.00      0.25      0.40         4
-  Pseudomonadales       0.99      0.94      0.96       270
-  Rhodobacterales       0.00      0.00      0.00         6
- Sphingomonadales       0.96      0.89      0.92       255
+    Acinetobacter       0.73      1.00      0.84         8
+        Agromyces       0.00      0.00      0.00         1
+     Arthrobacter       0.33      1.00      0.50         2
+         Bacillus       0.43      0.75      0.55         4
+    Brevundimonas       0.50      1.00      0.67        10
+      Clavibacter       0.00      0.00      0.00         2
+   Curtobacterium       0.73      0.50      0.59        16
+     Cytobacillus       0.00      0.00      0.00         4
+          Erwinia       0.96      0.96      0.96       561
+        Ewingella       0.63      0.92      0.75        13
+ Frigoribacterium       0.33      0.60      0.43         5
+   Frondihabitans       0.00      0.00      0.00         3
+ Methylobacterium       0.50      0.29      0.36         7
+      Methylopila       0.00      0.00      0.00         3
+   Microbacterium       0.00      0.00      0.00         3
+      Micrococcus       0.00      0.00      0.00         1
+   Oceanobacillus       0.00      0.00      0.00         1
+ Paenarthrobacter       0.00      0.00      0.00         2
+          Pantoea       0.64      0.64      0.64        64
+ Paraburkholderia       0.00      0.00      0.00         1
+       Paracoccus       0.33      0.17      0.22         6
+    Pararhizobium       0.00      0.00      0.00         2
+     Peribacillus       1.00      0.50      0.67         2
+Pseudarthrobacter       1.00      0.20      0.33         5
+      Pseudomonas       0.97      0.97      0.97       270
+         Rahnella       0.76      0.57      0.65        46
+        Ralstonia       0.00      0.00      0.00         1
+    Rathayibacter       0.50      0.43      0.46         7
+      Rhodococcus       0.00      0.00      0.00         1
+   Rosenbergiella       0.99      0.98      0.99       271
+         Serratia       0.00      0.00      0.00        12
+     Sphingomonas       0.96      0.96      0.96       255
+        Spirosoma       1.00      0.50      0.67         6
+   Staphylococcus       1.00      1.00      1.00        11
+       Variovorax       0.00      0.00      0.00         1
+       Williamsia       0.25      0.33      0.29         3
 
-        micro avg       0.98      0.92      0.95      1617
-        macro avg       0.75      0.58      0.62      1617
-     weighted avg       0.97      0.92      0.94      1617
+        micro avg       0.92      0.90      0.91      1610
+        macro avg       0.40      0.40      0.37      1610
+     weighted avg       0.91      0.90      0.90      1610
 
 
-Host **Host_class** Accuracy: 0.9283
+Warning: Found 1 unknown host Host_family labels in test data:
+Unknown labels: {'Dermacoccaceae'}
+These samples will be excluded from evaluation
+
+Host **Host_family** Accuracy: 0.9344
+Number of test samples: 1616
+Number of classes in test: 20
+
+Classification Report:
+                     precision    recall  f1-score   support
+
+   Acetobacteraceae       0.00      0.00      0.00         1
+  Aurantimonadaceae       0.00      0.00      0.00         3
+        Bacillaceae       1.00      0.54      0.70        13
+   Burkholderiaceae       0.00      0.00      0.00         2
+   Caulobacteraceae       0.62      1.00      0.77        10
+     Comamonadaceae       0.00      0.00      0.00         1
+      Cytophagaceae       1.00      0.50      0.67         6
+        Erwiniaceae       0.99      0.97      0.98       896
+Methylobacteriaceae       0.50      0.43      0.46         7
+    Methylopilaceae       0.00      0.00      0.00         3
+  Microbacteriaceae       0.91      0.78      0.84        37
+     Micrococcaceae       0.53      0.80      0.64        10
+      Moraxellaceae       0.73      1.00      0.84         8
+       Nocardiaceae       0.43      0.75      0.55         4
+      Paracoccaceae       0.12      0.17      0.14         6
+   Pseudomonadaceae       0.98      0.98      0.98       270
+       Rhizobiaceae       0.33      0.50      0.40         2
+  Sphingomonadaceae       0.96      0.95      0.95       255
+  Staphylococcaceae       1.00      1.00      1.00        11
+       Yersiniaceae       0.77      0.76      0.77        71
+
+          micro avg       0.95      0.93      0.94      1616
+          macro avg       0.54      0.56      0.53      1616
+       weighted avg       0.95      0.93      0.94      1616
+
+
+Host **Host_order** Accuracy: 0.9617
+Number of test samples: 1618
+Number of classes in test: 13
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bacillales       1.00      0.92      0.96        24
+ Burkholderiales       0.00      0.00      0.00         3
+ Caulobacterales       0.67      1.00      0.80        10
+    Cytophagales       1.00      0.50      0.67         6
+Enterobacterales       1.00      0.99      0.99       967
+Hyphomicrobiales       0.33      0.07      0.11        15
+   Micrococcales       0.79      0.94      0.86        49
+    Moraxellales       0.73      1.00      0.84         8
+ Mycobacteriales       0.00      0.00      0.00         4
+ Pseudomonadales       0.97      0.97      0.97       270
+ Rhodobacterales       0.42      0.83      0.56         6
+Rhodospirillales       0.00      0.00      0.00         1
+Sphingomonadales       0.96      0.95      0.95       255
+
+       micro avg       0.97      0.96      0.96      1618
+       macro avg       0.61      0.63      0.59      1618
+    weighted avg       0.97      0.96      0.96      1618
+
+
+Host **Host_class** Accuracy: 0.9858
 Number of test samples: 1618
 Number of classes in test: 6
 
 Classification Report:
-                      precision    recall  f1-score   support
+                     precision    recall  f1-score   support
 
-       Actinomycetes       0.87      0.77      0.82        53
- Alphaproteobacteria       0.98      0.87      0.92       287
-             Bacilli       1.00      0.25      0.40        24
-  Betaproteobacteria       0.00      0.00      0.00         3
-          Cytophagia       1.00      0.33      0.50         6
- Gammaproteobacteria       1.00      0.97      0.98      1245
+      Actinomycetes       0.90      0.98      0.94        53
+Alphaproteobacteria       0.97      0.98      0.97       287
+            Bacilli       1.00      0.96      0.98        24
+ Betaproteobacteria       0.00      0.00      0.00         3
+         Cytophagia       1.00      0.50      0.67         6
+Gammaproteobacteria       1.00      0.99      1.00      1245
 
-           micro avg       0.99      0.93      0.96      1618
-           macro avg       0.81      0.53      0.60      1618
-        weighted avg       0.99      0.93      0.95      1618
+          micro avg       0.99      0.99      0.99      1618
+          macro avg       0.81      0.74      0.76      1618
+       weighted avg       0.99      0.99      0.99      1618
 
 
-Host **Host_phylum** Accuracy: 0.9240
+Host **Host_phylum** Accuracy: 0.9883
 Number of test samples: 1618
 Number of classes in test: 4
 
 Classification Report:
-                 precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
- Actinomycetota       0.90      0.66      0.76        53
-      Bacillota       1.00      0.25      0.40        24
-   Bacteroidota       1.00      0.33      0.50         6
- Pseudomonadota       1.00      0.95      0.97      1535
+Actinomycetota       0.84      0.98      0.90        53
+     Bacillota       1.00      1.00      1.00        24
+  Bacteroidota       1.00      0.17      0.29         6
+Pseudomonadota       1.00      0.99      0.99      1535
 
-      micro avg       0.99      0.92      0.96      1618
-      macro avg       0.97      0.55      0.66      1618
-   weighted avg       0.99      0.92      0.95      1618
+     micro avg       0.99      0.99      0.99      1618
+     macro avg       0.96      0.78      0.80      1618
+  weighted avg       0.99      0.99      0.99      1618
 
 #### train_strain; test_matrix
 
@@ -1356,16 +1474,17 @@ Host_order: 13 classes
 Host_class: 6 classes
 Host_phylum: 4 classes
 
-Train Loss: 0.0365, Val Loss: 0.0826
-Train Accuracies: {'Family': '0.9828', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9777', 'Host_family': '0.9963', 'Host_order': '0.9980', 'Host_class': '1.0000', 'Host_phylum': '0.9997'}
-Val Accuracies: {'Family': '0.9757', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9870', 'Host_family': '0.9948', 'Host_order': '0.9974', 'Host_class': '0.9974', 'Host_phylum': '0.9974'}
+Train Loss: 0.0442, Val Loss: 0.0540
+Train Accuracies: {'Family': '0.9846', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9749', 'Host_family': '0.9935', 'Host_order': '0.9963', 'Host_class': '0.9986', 'Host_phylum': '0.9983'}
+Val Accuracies: {'Family': '0.9750', 'Class': '1.0000', 'Phylum': '1.0000', 'Host_genus': '0.9896', 'Host_family': '0.9948', 'Host_order': '1.0000', 'Host_class': '1.0000', 'Host_phylum': '1.0000'}
 
 Number of test samples: 8360
+
 Warning: Found 4 unknown viral Family labels in test data:
-Unknown labels: {'Rountreeviridae', 'Schitoviridae', 'Zobellviridae', 'Demerecviridae'}
+Unknown labels: {'Zobellviridae', 'Demerecviridae', 'Schitoviridae', 'Rountreeviridae'}
 These samples will be excluded from evaluation
 
-**Viral Family** Accuracy: 0.3200
+Viral Family Accuracy: 0.3183
 Number of test samples: 4775
 Number of classes in test: 14
 
@@ -1373,26 +1492,26 @@ Classification Report:
                      precision    recall  f1-score   support
 
    Ackermannviridae       0.00      0.00      0.00        17
-  Autographiviridae       0.02      0.01      0.01       168
+  Autographiviridae       0.00      0.00      0.00       168
      Casjensviridae       0.00      0.00      0.00       303
-       Chaseviridae       0.11      0.02      0.03       131
-     Drexlerviridae       0.39      0.24      0.29       390
+       Chaseviridae       0.00      0.00      0.00       131
+     Drexlerviridae       0.43      0.31      0.36       390
      Herelleviridae       0.00      0.00      0.00        30
        Kyanoviridae       0.00      0.00      0.00        76
-Mesyanzhinovviridae       0.33      0.04      0.07       520
+Mesyanzhinovviridae       0.32      0.01      0.02       520
   Orlajensenviridae       0.00      0.00      0.00       613
-       Peduoviridae       0.32      0.95      0.48      1487
+       Peduoviridae       0.31      0.94      0.47      1487
      Salasmaviridae       0.00      0.00      0.00        66
       Straboviridae       0.00      0.00      0.00        21
        Vilmaviridae       0.00      0.00      0.00       617
-      Zierdtviridae       0.54      0.02      0.04       336
+      Zierdtviridae       0.00      0.00      0.00       336
 
            accuracy                           0.32      4775
-          macro avg       0.12      0.09      0.07      4775
-       weighted avg       0.21      0.32      0.18      4775
+          macro avg       0.08      0.09      0.06      4775
+       weighted avg       0.17      0.32      0.18      4775
 
 
-**Viral Class Accuracy**: 1.0000
+Viral Class Accuracy: 1.0000
 Number of test samples: 4894
 Number of classes in test: 1
 
@@ -1406,7 +1525,7 @@ Caudoviricetes       1.00      1.00      1.00      4894
   weighted avg       1.00      1.00      1.00      4894
 
 
-**Viral Phylum Accuracy**: 1.0000
+Viral Phylum Accuracy: 1.0000
 Number of test samples: 4894
 Number of classes in test: 1
 
@@ -1420,34 +1539,152 @@ Classification Report:
 weighted avg       1.00      1.00      1.00      4894
 
 
-Warning: Found 172 unknown host Host_genus labels in test data:
-Unknown labels: {'Megamonas', 'Collimonas', 'Klenkia', 'Faecalibacterium', 'Blastococcus', 'Variovorax', 'Pontimonas', 'Mediterraneibacter', 'Microbacterium', 'Demequina', 'Bifidobacterium', 'Phocaeicola', 'Xylophilus', 'Collinsella', 'Telluria', 'Afipia', 'Brevundimonas', 'Phyllobacterium', 'Geodermatophilus', 'Arachnia', 'Candidatus Microsaccharimonas', 'Pantoea', 'Serratia', 'Stenotrophomonas', 'Rouxiella', 'Tamlana', 'Bacteroides', 'Klebsiella', 'Pectobacterium', 'Agromyces', 'Pseudomonas', 'Janthinobacterium', 'Salmonella', 'Plantibacter', 'Frigoribacterium', 'Frondihabitans', 'Bacillus', 'Clavibacter', 'Photorhabdus', 'Marmoricola', 'Photobacterium', 'Buttiauxella', 'Cellulosimicrobium', 'Novosphingobium', 'Pseudorhizobium', 'Nostoc', 'Duganella', 'Polynucleobacter', 'Ensifer', 'Hyphomicrobium', 'Microcoleus', 'Porticoccus', 'Xenophilus', 'Bordetella', 'Smaragdicoccus', 'Ewingella', 'Methylobacterium', 'Herbiconiux', 'Phaseolibacter', 'Nitrospira', 'Rhodococcus', 'Pluralibacter', 'Exiguobacterium', 'Leclercia', 'Scandinavium', 'Cronobacter', 'Mycobacterium', 'Cryobacterium', 'Epilithonimonas', 'Ochrobactrum', 'Chryseobacterium', 'Enterococcus', 'Subtercola', 'Microvirga', 'Izhakiella', 'Arsenophonus', 'Candidatus Flexicrinis', 'Methyloglobulus', 'Paraburkholderia', 'Sphingopyxis', 'Pedobacter', 'Mixta', 'Leifsonia', 'Williamsia', 'Sphingomicrobium', 'Pseudoxanthomonas', 'Hafnia', 'Parasynechococcus', 'Maritimibacter', 'Escherichia', 'Stutzerimonas', 'Mesorhizobium', 'Ruminococcus', 'Oerskovia', 'Deinococcus', 'Devosia', 'Promicromonospora', 'Kibdelosporangium', 'Samsonia', 'Pseudescherichia', 'Agreia', 'Aminobacter', 'Acidovorax', 'Carnobacterium', 'Agrobacterium', 'Mycoplana', 'Enterobacter', 'Yersinia', 'Alistipes', 'Actinosynnema', 'Sanguibacter', 'Aureimonas', 'Xenorhabdus', 'Streptomyces', 'Acinetobacter', 'Thermophilibacter', 'Hymenobacter', 'Sinorhizobium', 'Morganella', 'Erythrobacter', 'Halomonas', 'Bradyrhizobium', 'Sodalis', 'Kocuria', 'Alloprevotella', 'Proteus', 'Tenebrionibacter', 'Kosakonia', 'Citrobacter', 'Aurantimonas', 'Cutibacterium', 'Fictibacillus', 'Rhizobium', 'Neorhizobium', 'Pauljensenia', 'Erwinia', 'Pararhizobium', 'Rosenbergiella', 'Nocardia', 'Rickettsiella', 'Atlantibacter', 'Candidatus Regiella', 'Leucobacter', 'Arthrobacter', 'Candidatus Hamiltonella', 'Pedomonas', 'Methylibium', 'Shinella', 'Achromobacter', 'Paenarthrobacter', 'Candidatus Scatomonas', 'Sphingomonas', 'Rathayibacter', 'Nocardioides', 'Gordonia', 'Vibrio', 'Pelagerythrobacter', 'Providencia', 'Rahnella', 'Pseudonocardia', 'Prevotella', 'Corynebacterium', 'Sphingobium', 'Xanthomonas', 'Spirosoma', 'Candidatus Stercorousia', 'Comamonas', 'Aquibium', 'Ruminiclostridium', 'Curtobacterium', 'Cupriavidus', 'Flavobacterium'}
+Warning: Found 144 unknown host Host_genus labels in test data:
+Unknown labels: {'Pelagerythrobacter', 'Porticoccus', 'Samsonia', 'Xylophilus', 'Subtercola', 'Demequina', 'Phaseolibacter', 'Collinsella', 'Maritimibacter', 'Bifidobacterium', 'Phyllobacterium', 'Citrobacter', 'Ruminococcus', 'Pseudorhizobium', 'Megamonas', 'Thermophilibacter', 'Chryseobacterium', 'Methyloglobulus', 'Parasynechococcus', 'Mesorhizobium', 'Marmoricola', 'Candidatus Flexicrinis', 'Hyphomicrobium', 'Corynebacterium', 'Leclercia', 'Halomonas', 'Plantibacter', 'Cronobacter', 'Photorhabdus', 'Promicromonospora', 'Prevotella', 'Blastococcus', 'Pedobacter', 'Atlantibacter', 'Duganella', 'Pectobacterium', 'Providencia', 'Vibrio', 'Agrobacterium', 'Neorhizobium', 'Ensifer', 'Methylibium', 'Sanguibacter', 'Pluralibacter', 'Gordonia', 'Nocardia', 'Leifsonia', 'Comamonas', 'Pseudoxanthomonas', 'Escherichia', 'Pontimonas', 'Enterobacter', 'Alloprevotella', 'Candidatus Scatomonas', 'Izhakiella', 'Kibdelosporangium', 'Candidatus Regiella', 'Xanthomonas', 'Cutibacterium', 'Sodalis', 'Sphingomicrobium', 'Nostoc', 'Nocardioides', 'Xenorhabdus', 'Yersinia', 'Faecalibacterium', 'Rickettsiella', 'Fictibacillus', 'Bradyrhizobium', 'Rhizobium', 'Pseudonocardia', 'Acidovorax', 'Alistipes', 'Aminobacter', 'Novosphingobium', 'Janthinobacterium', 'Cellulosimicrobium', 'Enterococcus', 'Sinorhizobium', 'Ochrobactrum', 'Kocuria', 'Ruminiclostridium', 'Flavobacterium', 'Erythrobacter', 'Mycoplana', 'Agreia', 'Phocaeicola', 'Hafnia', 'Arachnia', 'Pseudescherichia', 'Bordetella', 'Candidatus Microsaccharimonas', 'Leucobacter', 'Collimonas', 'Carnobacterium', 'Epilithonimonas', 'Rouxiella', 'Xenophilus', 'Aurantimonas', 'Salmonella', 'Sphingopyxis', 'Microvirga', 'Geodermatophilus', 'Scandinavium', 'Afipia', 'Nitrospira', 'Pauljensenia', 'Microcoleus', 'Stutzerimonas', 'Polynucleobacter', 'Herbiconiux', 'Shinella', 'Exiguobacterium', 'Aquibium', 'Hymenobacter', 'Smaragdicoccus', 'Devosia', 'Pedomonas', 'Proteus', 'Tamlana', 'Stenotrophomonas', 'Klebsiella', 'Cupriavidus', 'Cryobacterium', 'Candidatus Stercorousia', 'Kosakonia', 'Bacteroides', 'Tenebrionibacter', 'Achromobacter', 'Mycobacterium', 'Streptomyces', 'Candidatus Hamiltonella', 'Morganella', 'Mixta', 'Telluria', 'Actinosynnema', 'Deinococcus', 'Sphingobium', 'Arsenophonus', 'Mediterraneibacter', 'Photobacterium', 'Buttiauxella', 'Oerskovia', 'Klenkia'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_genus
+Host Host_genus Accuracy: 0.5530
+Number of test samples: 2121
+Number of classes in test: 28
 
-Warning: Found 74 unknown host Host_family labels in test data:
-Unknown labels: {'Candidatus Flexifilaceae', 'Methylobacteriaceae', 'Roseobacteraceae', 'Sphingosinicellaceae', 'Burkholderiaceae', 'Sphaerotilaceae', 'Porticoccaceae', 'Corynebacteriaceae', 'Hyphomicrobiaceae', 'Cellulomonadaceae', 'Atopobiaceae', 'Moraxellaceae', 'Enterococcaceae', 'Flavobacteriaceae', 'Micrococcaceae', 'Weeksellaceae', 'Nocardioidaceae', 'Deinococcaceae', 'Aurantimonadaceae', 'Bacillaceae', 'Promicromonosporaceae', 'Lachnospiraceae', 'Vibrionaceae', 'Brucellaceae', 'Carnobacteriaceae', 'Fusobacteriaceae', 'Phyllobacteriaceae', 'Oxalobacteraceae', 'Caulobacteraceae', 'Coxiellaceae', 'Streptomycetaceae', 'Rikenellaceae', 'Erythrobacteraceae', 'Bruguierivoracaceae', 'Nitrospiraceae', 'Cytophagaceae', 'Prevotellaceae', 'Actinomycetaceae', 'Lysobacteraceae', 'Pseudomonadaceae', 'Morganellaceae', 'Hymenobacteraceae', 'Alcaligenaceae', 'Geodermatophilaceae', 'Mycobacteriaceae', 'Erwiniaceae', 'Propionibacteriaceae', 'Oscillospiraceae', 'Devosiaceae', 'Microcoleaceae', 'Coriobacteriaceae', 'Pectobacteriaceae', 'Pseudonocardiaceae', 'Demequinaceae', 'Sanguibacteraceae', 'Sphingobacteriaceae', 'Sphingomonadaceae', 'Bifidobacteriaceae', 'Selenomonadaceae', 'Methylococcaceae', 'Microbacteriaceae', 'Prochlorococcaceae', 'Yersiniaceae', 'Rhizobiaceae', 'Candidatus Saccharimonadaceae', 'Comamonadaceae', 'Halomonadaceae', 'Nocardiaceae', 'Bacteroidaceae', 'Gordoniaceae', 'Nitrobacteraceae', 'Hafniaceae', 'Nostocaceae', 'Enterobacteriaceae'}
+Classification Report:
+                  precision    recall  f1-score   support
+
+   Acinetobacter       0.00      0.00      0.00         4
+       Agromyces       0.00      0.00      0.00         4
+    Arthrobacter       0.00      0.00      0.00         9
+      Aureimonas       0.00      0.00      0.00        28
+        Bacillus       0.00      0.00      0.00         1
+   Brevundimonas       0.00      0.00      0.00         3
+     Clavibacter       0.00      0.00      0.00        13
+  Curtobacterium       0.00      0.00      0.00        96
+         Erwinia       0.26      0.16      0.20        97
+       Ewingella       0.00      0.00      0.00        17
+Frigoribacterium       0.00      0.00      0.00        32
+  Frondihabitans       0.00      0.00      0.00         1
+Methylobacterium       0.09      0.02      0.04       122
+  Microbacterium       0.00      0.00      0.00        23
+Paenarthrobacter       0.00      0.00      0.00         5
+         Pantoea       0.65      0.20      0.31       252
+Paraburkholderia       0.00      0.00      0.00         1
+   Pararhizobium       0.00      0.00      0.00         6
+     Pseudomonas       0.54      0.95      0.69       561
+        Rahnella       0.00      0.00      0.00        44
+   Rathayibacter       0.00      0.00      0.00        44
+     Rhodococcus       0.00      0.00      0.00        42
+  Rosenbergiella       0.50      0.44      0.47         9
+        Serratia       0.00      0.00      0.00        17
+    Sphingomonas       0.60      0.86      0.71       655
+       Spirosoma       0.00      0.00      0.00         1
+      Variovorax       0.00      0.00      0.00        28
+      Williamsia       0.00      0.00      0.00         6
+
+       micro avg       0.55      0.55      0.55      2121
+       macro avg       0.09      0.09      0.09      2121
+    weighted avg       0.42      0.55      0.45      2121
+
+
+Warning: Found 58 unknown host Host_family labels in test data:
+Unknown labels: {'Bifidobacteriaceae', 'Propionibacteriaceae', 'Nitrospiraceae', 'Enterococcaceae', 'Lachnospiraceae', 'Coxiellaceae', 'Hyphomicrobiaceae', 'Demequinaceae', 'Lysobacteraceae', 'Bruguierivoracaceae', 'Sanguibacteraceae', 'Bacteroidaceae', 'Brucellaceae', 'Weeksellaceae', 'Fusobacteriaceae', 'Rikenellaceae', 'Actinomycetaceae', 'Deinococcaceae', 'Morganellaceae', 'Nitrobacteraceae', 'Cellulomonadaceae', 'Pseudonocardiaceae', 'Devosiaceae', 'Alcaligenaceae', 'Hymenobacteraceae', 'Vibrionaceae', 'Porticoccaceae', 'Sphingosinicellaceae', 'Geodermatophilaceae', 'Microcoleaceae', 'Hafniaceae', 'Flavobacteriaceae', 'Roseobacteraceae', 'Candidatus Flexifilaceae', 'Selenomonadaceae', 'Streptomycetaceae', 'Sphingobacteriaceae', 'Phyllobacteriaceae', 'Carnobacteriaceae', 'Prevotellaceae', 'Nocardioidaceae', 'Atopobiaceae', 'Gordoniaceae', 'Coriobacteriaceae', 'Pectobacteriaceae', 'Mycobacteriaceae', 'Sphaerotilaceae', 'Halomonadaceae', 'Oscillospiraceae', 'Corynebacteriaceae', 'Erythrobacteraceae', 'Methylococcaceae', 'Promicromonosporaceae', 'Oxalobacteraceae', 'Prochlorococcaceae', 'Nostocaceae', 'Enterobacteriaceae', 'Candidatus Saccharimonadaceae'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_family
+Host Host_family Accuracy: 0.5425
+Number of test samples: 2365
+Number of classes in test: 16
 
-Warning: Found 40 unknown host Host_order labels in test data:
-Unknown labels: {'Caulobacterales', 'Aggregatilineales', 'Selenomonadales', 'Bacteroidales', 'Kitasatosporales', 'Geodermatophilales', 'Coriobacteriales', 'Vibrionales', 'Oceanospirillales', 'Enterobacterales', 'Oscillatoriales', 'Bacillales', 'Legionellales', 'Synechococcales', 'Lachnospirales', 'Pseudomonadales', 'Micrococcales', 'Cytophagales', 'Lactobacillales', 'Eubacteriales', 'Pseudonocardiales', 'Methylococcales', 'Cellvibrionales', 'Sphingomonadales', 'Nitrospirales', 'Mycobacteriales', 'Flavobacteriales', 'Rhodobacterales', 'Deinococcales', 'Nostocales', 'Burkholderiales', 'Sphingobacteriales', 'Propionibacteriales', 'Moraxellales', 'Fusobacteriales', 'Bifidobacteriales', 'Hyphomicrobiales', 'Actinomycetales', 'Candidatus Saccharimonadales', 'Lysobacterales'}
+Classification Report:
+                     precision    recall  f1-score   support
+
+  Aurantimonadaceae       0.00      0.00      0.00        29
+        Bacillaceae       0.00      0.00      0.00         2
+   Burkholderiaceae       0.00      0.00      0.00         3
+   Caulobacteraceae       0.00      0.00      0.00         3
+     Comamonadaceae       0.00      0.00      0.00        40
+      Cytophagaceae       0.00      0.00      0.00         1
+        Erwiniaceae       0.73      0.47      0.57       368
+Methylobacteriaceae       0.10      0.02      0.04       131
+  Microbacteriaceae       0.00      0.00      0.00       246
+     Micrococcaceae       0.00      0.00      0.00        15
+      Moraxellaceae       0.00      0.00      0.00         4
+       Nocardiaceae       0.00      0.00      0.00        51
+   Pseudomonadaceae       0.48      0.97      0.64       574
+       Rhizobiaceae       0.00      0.00      0.00       118
+  Sphingomonadaceae       0.60      0.81      0.69       677
+       Yersiniaceae       0.00      0.00      0.00       103
+
+          micro avg       0.54      0.54      0.54      2365
+          macro avg       0.12      0.14      0.12      2365
+       weighted avg       0.41      0.54      0.44      2365
+
+
+Warning: Found 28 unknown host Host_order labels in test data:
+Unknown labels: {'Eubacteriales', 'Oscillatoriales', 'Lysobacterales', 'Pseudonocardiales', 'Methylococcales', 'Propionibacteriales', 'Candidatus Saccharimonadales', 'Vibrionales', 'Nitrospirales', 'Lactobacillales', 'Oceanospirillales', 'Bifidobacteriales', 'Kitasatosporales', 'Synechococcales', 'Lachnospirales', 'Deinococcales', 'Bacteroidales', 'Sphingobacteriales', 'Fusobacteriales', 'Coriobacteriales', 'Flavobacteriales', 'Nostocales', 'Aggregatilineales', 'Legionellales', 'Geodermatophilales', 'Selenomonadales', 'Actinomycetales', 'Cellvibrionales'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_order
+Host Host_order Accuracy: 0.5024
+Number of test samples: 3083
+Number of classes in test: 12
 
-Warning: Found 18 unknown host Host_class labels in test data:
-Unknown labels: {'Cyanophyceae', 'Coriobacteriia', 'Bacteroidia', 'Candidatus Saccharimonadia', 'Cytophagia', 'Anaerolineae', 'Negativicutes', 'Sphingobacteriia', 'Deinococci', 'Fusobacteriia', 'Clostridia', 'Alphaproteobacteria', 'Gammaproteobacteria', 'Actinomycetes', 'Flavobacteriia', 'Nitrospiria', 'Bacilli', 'Betaproteobacteria'}
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bacillales       0.00      0.00      0.00         4
+ Burkholderiales       0.50      0.01      0.03        78
+ Caulobacterales       0.00      0.00      0.00         3
+    Cytophagales       0.00      0.00      0.00       301
+Enterobacterales       0.94      0.58      0.72       688
+Hyphomicrobiales       0.05      0.01      0.02       300
+   Micrococcales       0.00      0.00      0.00       273
+    Moraxellales       0.00      0.00      0.00         4
+ Mycobacteriales       0.00      0.00      0.00       177
+ Pseudomonadales       0.39      0.95      0.56       574
+ Rhodobacterales       0.00      0.00      0.00         1
+Sphingomonadales       0.50      0.88      0.64       680
+
+        accuracy                           0.50      3083
+       macro avg       0.20      0.20      0.16      3083
+    weighted avg       0.41      0.50      0.41      3083
+
+
+Warning: Found 12 unknown host Host_class labels in test data:
+Unknown labels: {'Cyanophyceae', 'Clostridia', 'Deinococci', 'Negativicutes', 'Sphingobacteriia', 'Fusobacteriia', 'Anaerolineae', 'Bacteroidia', 'Flavobacteriia', 'Nitrospiria', 'Coriobacteriia', 'Candidatus Saccharimonadia'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_class
+Host Host_class Accuracy: 0.6276
+Number of test samples: 3201
+Number of classes in test: 6
 
-Warning: Found 10 unknown host Host_phylum labels in test data:
-Unknown labels: {'Chloroflexota', 'Cyanobacteriota', 'Bacteroidota', 'Nitrospirota', 'Pseudomonadota', 'Bacillota', 'Deinococcota', 'Candidatus Saccharibacteria', 'Fusobacteriota', 'Actinomycetota'}
+Classification Report:
+                     precision    recall  f1-score   support
+
+      Actinomycetes       0.00      0.00      0.00       536
+Alphaproteobacteria       0.63      0.76      0.69       984
+            Bacilli       0.00      0.00      0.00        15
+ Betaproteobacteria       0.00      0.00      0.00        78
+         Cytophagia       0.00      0.00      0.00       301
+Gammaproteobacteria       0.62      0.98      0.76      1287
+
+           accuracy                           0.63      3201
+          macro avg       0.21      0.29      0.24      3201
+       weighted avg       0.45      0.63      0.52      3201
+
+
+Warning: Found 6 unknown host Host_phylum labels in test data:
+Unknown labels: {'Nitrospirota', 'Fusobacteriota', 'Cyanobacteriota', 'Deinococcota', 'Chloroflexota', 'Candidatus Saccharibacteria'}
 These samples will be excluded from evaluation
 
-No valid test samples for host Host_phylum
+Host Host_phylum Accuracy: 0.7221
+Number of test samples: 3253
+Number of classes in test: 4
 
-**While MILLARD and MATRIX share some same hosts, the hosts in STRAIN is completely differerent.**
+Classification Report:
+                precision    recall  f1-score   support
+
+Actinomycetota       0.00      0.00      0.00       543
+     Bacillota       0.00      0.00      0.00        27
+  Bacteroidota       0.00      0.00      0.00       334
+Pseudomonadota       0.72      1.00      0.84      2349
+
+      accuracy                           0.72      3253
+     macro avg       0.18      0.25      0.21      3253
+  weighted avg       0.52      0.72      0.61      3253
