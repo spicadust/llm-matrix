@@ -3459,7 +3459,12 @@ taxmyphage_viral_Class is nan: 1.0
 taxmyphage_viral_Phylum is nan: 1.0
 taxmyphage_viral_Kingdom is nan: 1.0
 
-- maybe just use ground truth host taxonomy and PhaGCN viral taxonomy
+*the matching between iphop host predictions and ground truth hosts (NaN dropped)*
+Phylum match: 99.97%
+Class match: 99.97%
+Order match: 99.53%
+Family match: 76.96%
+Genus match: 72.23%
 
 #### strain taxonomy
 
