@@ -2457,13 +2457,13 @@ Kingdom is nan (taxmyphage): 0.9978568877247291
 Family is nan (PhaGCN): 0.41338254554113585
 Order is nan (PhaGCN): 1.0
 Class is nan (PhaGCN): 0.41338254554113585
-Phyllum is nan (PhaGCN): 0.41338254554113585
+Phylum is nan (PhaGCN): 0.41338254554113585
 
 Host genus is nan (iPHoP): 0.6085248243838552
 Host family is nan (iPHoP): 0.6091201333492082
 Host order is nan (iPHoP): 0.6085248243838552
 Host class is nan (iPHoP): 0.6085248243838552
-Host phyllum is nan (iPHoP): 0.6085248243838552
+Host phylum is nan (iPHoP): 0.6085248243838552
 
 Taxmyphage's predictions can be treated as "ground truth"; good at classifying sequences that are already known — ones that exist in current databases
 PhaGCN works better for lower-resolution taxonomy, especially at the family level; useful when working with novel sequences
