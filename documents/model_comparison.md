@@ -1313,6 +1313,8 @@ Warning: Found 4 unknown host Host_genus labels in test data:
 Unknown labels: {'Aureimonas', 'Belnapia', 'Dermacoccus', 'Priestia'}
 These samples will be excluded from evaluation
 
+##### using ground truth host taxonomy in testing
+
 Host **Host_genus** Accuracy: 0.8975
 Number of test samples: 1610
 Number of classes in test: 36
@@ -1459,6 +1461,173 @@ Pseudomonadota       1.00      0.99      0.99      1535
      micro avg       0.99      0.99      0.99      1618
      macro avg       0.96      0.78      0.80      1618
   weighted avg       0.99      0.99      0.99      1618
+
+##### using iphop host taxonomy in testing
+
+Warning: Found 17 unknown host Host_genus labels in test data:
+Unknown labels: {'Phaseolibacter', 'Xenorhabdus', 'Photorhabdus', 'Lonsdalea', 'Luteimonas', 'Priestia', 'Rouxiella', 'Promicromonospora', 'Tatumella', 'Pseudacidovorax', 'Atlantibacter', 'Belnapia', 'Aureimonas', 'Pluralibacter', 'Dermacoccus', 'Mixta', 'Kocuria'}
+These samples will be excluded from evaluation
+
+Host Host_genus Accuracy: 0.6882
+Number of test samples: 1408
+Number of classes in test: 43
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+   Acinetobacter       0.73      0.89      0.80         9
+    Arthrobacter       0.40      1.00      0.57         2
+        Bacillus       0.43      0.75      0.55         4
+   Brevundimonas       0.60      1.00      0.75         9
+     Cronobacter       0.00      0.00      0.00         1
+  Curtobacterium       0.80      0.50      0.62        16
+    Cytobacillus       0.00      0.00      0.00         4
+         Dickeya       0.00      0.00      0.00         5
+    Enterobacter       0.00      0.00      0.00        62
+         Erwinia       0.55      0.96      0.70       290
+     Escherichia       0.00      0.00      0.00       144
+       Ewingella       0.23      0.16      0.19        19
+Frigoribacterium       0.43      1.00      0.60         3
+  Frondihabitans       0.00      0.00      0.00         1
+        Gordonia       0.00      0.00      0.00         2
+      Klebsiella       0.00      0.00      0.00         5
+      Lelliottia       0.00      0.00      0.00         1
+Methylobacterium       0.50      0.20      0.29         5
+     Methylopila       0.00      0.00      0.00         2
+  Microbacterium       0.00      0.00      0.00         1
+  Oceanobacillus       0.00      0.00      0.00         1
+Paenarthrobacter       1.00      0.50      0.67         6
+         Pantoea       0.61      0.42      0.50        84
+Paraburkholderia       0.00      0.00      0.00         1
+      Paracoccus       0.33      0.33      0.33         3
+   Pararhizobium       0.00      0.00      0.00         1
+  Pectobacterium       0.00      0.00      0.00         1
+    Peribacillus       1.00      0.50      0.67         2
+     Providencia       0.00      0.00      0.00         3
+     Pseudomonas       1.00      0.97      0.98       269
+        Rahnella       0.32      0.34      0.33        29
+       Ralstonia       0.00      0.00      0.00         1
+   Rathayibacter       0.67      0.40      0.50         5
+       Rhizobium       0.50      1.00      0.67         1
+     Rhodococcus       0.00      0.00      0.00         1
+  Rosenbergiella       0.61      0.99      0.75       138
+      Salmonella       0.00      0.00      0.00         8
+        Serratia       0.00      0.00      0.00        10
+    Sphingomonas       0.96      0.96      0.96       199
+  Staphylococcus       1.00      1.00      1.00        11
+    Streptomyces       0.00      0.00      0.00         2
+      Williamsia       0.25      1.00      0.40         1
+        Yersinia       0.00      0.00      0.00        46
+
+       micro avg       0.70      0.69      0.69      1408
+       macro avg       0.30      0.35      0.30      1408
+    weighted avg       0.59      0.69      0.62      1408
+
+
+Warning: Found 1 unknown host Host_family labels in test data:
+Unknown labels: {'Dermacoccaceae'}
+These samples will be excluded from evaluation
+
+Host Host_family Accuracy: 0.7182
+Number of test samples: 1501
+Number of classes in test: 26
+
+Classification Report:
+                       precision    recall  f1-score   support
+
+     Acetobacteraceae       0.00      0.00      0.00         1
+    Aurantimonadaceae       0.00      0.00      0.00         3
+          Bacillaceae       1.00      0.58      0.74        12
+     Burkholderiaceae       0.00      0.00      0.00         2
+     Caulobacteraceae       0.75      1.00      0.86         9
+       Comamonadaceae       0.00      0.00      0.00         1
+   Enterobacteriaceae       0.20      0.00      0.01       246
+          Erwiniaceae       0.59      0.97      0.74       525
+         Gordoniaceae       0.00      0.00      0.00         2
+      Lysobacteraceae       0.00      0.00      0.00         4
+  Methylobacteriaceae       0.40      0.40      0.40         5
+      Methylopilaceae       0.00      0.00      0.00         2
+    Microbacteriaceae       0.82      0.88      0.85        26
+       Micrococcaceae       0.80      0.89      0.84         9
+        Moraxellaceae       0.73      0.89      0.80         9
+       Morganellaceae       0.00      0.00      0.00        32
+         Nocardiaceae       0.14      0.50      0.22         2
+        Paracoccaceae       0.12      0.33      0.18         3
+    Pectobacteriaceae       0.00      0.00      0.00         7
+Promicromonosporaceae       0.00      0.00      0.00         1
+     Pseudomonadaceae       0.99      0.98      0.99       269
+         Rhizobiaceae       0.50      0.50      0.50         2
+    Sphingomonadaceae       0.96      0.95      0.96       199
+    Staphylococcaceae       1.00      1.00      1.00        11
+    Streptomycetaceae       0.00      0.00      0.00         2
+         Yersiniaceae       0.74      0.38      0.51       117
+
+            micro avg       0.73      0.72      0.72      1501
+            macro avg       0.38      0.39      0.37      1501
+         weighted avg       0.65      0.72      0.65      1501
+
+
+Host Host_order Accuracy: 0.9641
+Number of test samples: 1503
+Number of classes in test: 14
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bacillales       1.00      0.96      0.98        23
+ Burkholderiales       0.00      0.00      0.00         3
+ Caulobacterales       0.75      1.00      0.86         9
+Enterobacterales       0.99      0.99      0.99       927
+Hyphomicrobiales       0.50      0.08      0.14        12
+Kitasatosporales       0.00      0.00      0.00         2
+  Lysobacterales       0.00      0.00      0.00         4
+   Micrococcales       0.80      0.95      0.87        38
+    Moraxellales       0.73      0.89      0.80         9
+ Mycobacteriales       0.00      0.00      0.00         4
+ Pseudomonadales       0.99      0.97      0.98       269
+ Rhodobacterales       0.22      0.67      0.33         3
+Rhodospirillales       0.00      0.00      0.00         1
+Sphingomonadales       0.96      0.96      0.96       199
+
+       micro avg       0.97      0.96      0.97      1503
+       macro avg       0.50      0.53      0.49      1503
+    weighted avg       0.97      0.96      0.96      1503
+
+
+Host Host_class Accuracy: 0.9887
+Number of test samples: 1503
+Number of classes in test: 5
+
+Classification Report:
+                     precision    recall  f1-score   support
+
+      Actinomycetes       0.90      1.00      0.95        44
+Alphaproteobacteria       0.96      0.98      0.97       224
+            Bacilli       1.00      1.00      1.00        23
+ Betaproteobacteria       0.00      0.00      0.00         3
+Gammaproteobacteria       1.00      0.99      1.00      1209
+
+          micro avg       0.99      0.99      0.99      1503
+          macro avg       0.77      0.79      0.78      1503
+       weighted avg       0.99      0.99      0.99      1503
+
+
+Host Host_phylum Accuracy: 0.9927
+Number of test samples: 1503
+Number of classes in test: 3
+
+Classification Report:
+                precision    recall  f1-score   support
+
+Actinomycetota       0.85      1.00      0.92        44
+     Bacillota       1.00      1.00      1.00        23
+Pseudomonadota       1.00      0.99      1.00      1436
+
+     micro avg       0.99      0.99      0.99      1503
+     macro avg       0.95      1.00      0.97      1503
+  weighted avg       1.00      0.99      0.99      1503
+
+
 
 #### train_strain; test_matrix
 
